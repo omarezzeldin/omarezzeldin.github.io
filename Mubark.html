@@ -82,6 +82,9 @@ const personPhone = urlParams.get('perphone');
 
 lhc_var.jCivilID = civil;
 
+LHCChatOptions.attr = new Array();
+LHCChatOptions.attr.push({'name':'الرقم المدني','value':civil,'type':'text','size':12,'req':true});
+
 (function() {
 var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
 var date = new Date();po.src = '//beshara.livehelperchat.com/design/defaulttheme/js/widgetv2/index.js?'+(""+date.getFullYear() + date.getMonth() + date.getDate());
