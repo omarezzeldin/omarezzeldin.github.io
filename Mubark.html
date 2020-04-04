@@ -101,7 +101,7 @@ LHCChatOptions.attr_prefill.push({'name':'username','value':personName});
 
 </script>
 <script>
-$(document).ready(function(){
+$(window).on('load', function() {
 	alert("Background color = " + $(".body").css("text-align"));
 	$('.body').css('text-align','right');
 });
