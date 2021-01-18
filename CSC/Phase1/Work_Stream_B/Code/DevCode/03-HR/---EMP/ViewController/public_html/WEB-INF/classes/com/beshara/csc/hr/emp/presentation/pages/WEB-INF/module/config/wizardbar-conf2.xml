@@ -1,0 +1,27 @@
+<wizards dir="#{shared_util.pageDirection}" notVisitedStyleClass="Setps-Next_button"
+         currentStyleClass="Step-current_button" visitedStyleClass="Step-finish_button"
+         xmlns="http://xml.beshara.com/schema/wizardbar-conf" disabledStyleClass="sadasdas">
+  <!-- #########START######## Apply Integration For Employee Full data  ###########added By M.abdelsabour########## -->
+  <wizard backNavigation="NAN" id="GovEmpDataRevisionWizBarID"
+          septsNavigationListener="#{govEmpMaintainBean.navigateSteps}" onCancel="#{govEmpMaintainBean.back}">
+    <step id="step1" label="#{resourcesBundle.Gov_emp_step1}" required="true" navigation="govempfirststep"/>
+    <step id="step2" label="#{resourcesBundle.Gov_emp_step2}" navigation="govempsecondstep"
+          disabled="#{!govEmpMaintainBean.enableTabs}"/>
+    <step id="step3" label="#{resourcesBundle.Gov_emp_step3}" navigation="govempthirdstep"
+          disabled="#{!govEmpMaintainBean.enableTabs}"/>
+    <!-- start of CSC-19300 -->
+    <step id="WivesStep" label="#{resourcesBundle.merRaise_Wives}" onClick="" navigation="raiseWivesNav"/>
+    <step id="KidsStep" label="#{resourcesBundle.merRaise_Kids}" onClick="" navigation="raiseKidsNav"/>
+    
+       <step id="MisStep" label="#{resourcesBundle.mis_title}" onClick="" navigation="misNav"/>
+    <step id="ExternalCoursesStep" label="#{resourcesBundle.external_Courses}" onClick="" navigation="externalCoursesNav"/>
+     <step id="TrainingCoursesStep" label="#{resourcesBundle.traning_courses_title}" onClick="" navigation="trainingCoursesNav"/>
+    <navBar>
+      <button id="BackButtonManyToMany" label="#{globalResources.back}"
+              rendered="#{govEmpMaintainBean.preSelectedCivilId}" navType="step" styleClass="cssButtonSmall"
+              navigation="cancel"/>
+    </navBar>
+  </wizard>
+  <!-- #########END########  Apply Integration For Employee Full data  ###########added By M.abdelsabour########## -->
+</wizards>
+

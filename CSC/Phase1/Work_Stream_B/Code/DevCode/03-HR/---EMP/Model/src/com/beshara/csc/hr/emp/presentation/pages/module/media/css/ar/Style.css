@@ -1,0 +1,496 @@
+#customDiv1.extraTooWideDiv{
+    background-clip: padding-box;
+    background-color: #2779b2;
+    background-image: url("../../images/popup_bg.jpg");
+    background-position: right top;
+    background-repeat: repeat-x;
+    border: 1px solid #2779b2;
+    border-radius: 6px;
+    box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+    direction: rtl;
+    outline: 0 none;
+    visibility: hidden;
+}
+#customDiv1.extraTooWideDiv, #customDiv2.extraTooWideDiv {
+    left: auto !important;
+    right: 6% !important;
+    top: 15px !important;
+    width: 860px !important;
+}
+
+/*controls []*/
+.divDetails {
+    background-clip: padding-box;
+    background-color: #2779B2;
+    background-image: url("../../images/popup_bg.jpg");
+    background-position: right top;
+    background-repeat: repeat-x;
+    border: 1px solid #2779B2;
+    border-radius: 6px;
+    box-shadow: 0 0 5px #000000;
+    left: 50px;
+    position: absolute;
+    top: 131px;
+    visibility: hidden;
+    width: 450px;
+}
+
+.divMainContentMany {
+    height: 145px;
+}
+/*controls []*/
+/* This class moved to app\media\css\ar\Style.css */
+/*
+.divMainContent
+{
+    height:245px;;
+    overflow-y:auto;
+}
+*/
+/*controls []*/
+.divContent1Fixed {
+    width: 100%;
+    height: 240px;
+    overflow: auto;
+}
+/*controls []*/
+.divContent1Dynamic {
+    width: 100%;
+    height: 100%;
+}
+
+.divCondition {
+    position: absolute;
+    top: 0px;
+    left: 165px;
+    width: 650px;
+    visibility: hidden;
+    z-index: 100;
+}
+
+.divMainContentManyAutoScreen {
+    height: 130px;
+    overflow-y: auto;
+}
+
+.divMainContent1Employees {
+    height: 280px;
+    overflow-y: auto;
+    text-align: center;
+}
+
+.divDecisionIntegrate {
+    height: 60px;
+    width: 600px;
+}
+
+.buttonMiddle {
+    text-align: center;
+    width: 100%;
+}
+
+.budgetTypeStyle {
+    height: 170px;
+    width: 100%;
+    overflow: auto;
+}
+
+.divMainContent1AssignReason {
+    height: 280px;
+    overflow-y: auto;
+}
+
+.divMainContent1WithOutWizardBar {
+    height: 336px;
+    overflow-y: auto;
+}
+
+.divSearchCustomized {
+    position: absolute;
+    top: 0px;
+    left: 180px;
+    width: 650px;
+    visibility: hidden;
+    z-index: 100;
+}
+
+.errMsg2 {
+    font-family: Tahoma;
+    color: Red;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    border: 0;
+    height: 0px;
+    text-align: center;
+    vertical-align: top;
+    /* modified by sherif.omar 4,4,25*/
+}
+
+.TitleMinistryAddDiv {
+    color: #002952;
+    font-family: Simplified Arabic;
+    font-size: 14pt;
+    font-weight: 700;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    text-align: center;
+}
+
+.typeSearchDiv {
+    position: absolute;
+    top: 70px;
+    left: 190px;
+    width: 650px;
+    visibility: hidden;
+    z-index: 100;
+}
+
+.divMainContentMany2 {
+    height: 210px;
+}
+
+.divHireProcedureSearch {
+    position: absolute;
+    top: 70px;
+    left: 155px;
+    width: 650px;
+    visibility: hidden;
+    z-index: 100;
+}
+
+.regulationDivSearch2 {
+    position: absolute;
+    top: 0px;
+    left: 250px;
+    visibility: hidden;
+    width: 520px;
+    height: 650px;
+    z-index: 100;
+}
+
+.colCenter1 {
+    text-align: left;
+    width: 40%;
+}
+
+.colCenter2 {
+    text-align: cenetr;
+    width: 60%;
+}
+
+.divSearchContent1FixedCustom {
+    width: 100%;
+    height: 180px;
+    overflow: auto;
+}
+
+.divMainContent1Employees2 {
+    height: 330px;
+    overflow-y: auto;
+    text-align: center;
+}
+
+.radioButton_DataTable_custom {
+    height: 8px;
+    border: 0;
+    padding: 0px;
+    border-spacing: 0px;
+    font-size: 6px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.newEmpListOfValuesStyle {
+    position: absolute;
+    visibility: hidden;
+    z-index: 100;
+    direction: rtl;
+    background-color: #2779b2;
+    background-image: url('../../images/popup_bg.jpg');
+    background-repeat: repeat-x;
+    background-position: top right;
+    border: 1px solid #2779b2;
+    border-radius: 6px;
+    outline: 0;
+    -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+    background-clip: padding-box;
+}
+
+.delDivScroll3 {
+    height: 190px;
+    width: 100%;
+    overflow: auto;
+    direction: rtl;
+}
+
+.newEmpListOfValuesStyle {
+    top: 30px;
+    left: 130px;
+    width: 650px;
+}
+
+.divMainContentScrollable {
+    height: 260px;
+    width: 975px;
+    overflow: auto;
+}
+
+.standardTable_HeaderPadding {
+    color: #000000;
+    font-family: Tahoma;
+    font-size: 8pt;
+    vertical-align: middle;
+    height: 24px;
+    text-decoration: none;
+    text-align: center;
+    white-space: nowrap;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.headerLink_NoRap {
+    color: White;
+    text-decoration: none;
+    white-space: nowrap;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.divContentExternalTable {
+    height: 215px;
+    overflow-y: auto;
+}
+
+.divMainContentWithCnt2 {
+    height: 225px;
+    overflow-y: auto;
+}
+
+/*.review_divMainContent1 {
+    max-height: 420px;
+    overflow-y: auto;
+    width: 100%;
+}*/
+
+.delDivScroll2 {
+    height: 240px;
+    width: 450px;
+    overflow: auto;
+    direction: rtl;
+}
+
+.colm1 {
+    width: 20%;
+}
+
+.colm2 {
+    width: 37%;
+}
+
+.colm3 {
+    width: 13%;
+}
+
+.colm4 {
+    width: 34%;
+}
+
+.cssButtonLarge {
+    padding: 0 15px 5px !important;
+    width: 170px !important;
+}
+
+.cssButtonXLarge {
+    padding: 0 15px 5px !important;
+    width: 200px !important;
+}
+
+.cssButton{
+    background: linear-gradient(#72C3E9, #208CBE, #2CA2D8);
+    border-color: #1F87CF !important;
+    border-image: none;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: 1px 1px 0 rgba(255, 255, 255, 0.2) inset, 1px -1px 0 rgba(255, 255, 255, 0.2) inset, -1px -1px 0 rgba(255, 255, 255, 0.2) inset, -1px 1px 0 rgba(255, 255, 255, 0.2) inset;
+    color: #FFFFFF;
+    font-family: tahoma;
+    font-size: 12px;
+    font-weight: normal;
+    height: 25px;
+    margin: 2px;
+    padding: 0 15px 5px !important;
+    width: auto !important;
+}
+.cssButton:focus
+{
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
+    -moz-box-shadow: inset 0 3px 3px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);*/
+}
+.cssButton[disabled="disabled"]
+{
+    background: linear-gradient(#CCCCCC, #EEEEEE, #AAAAAA) !important;
+    border-color: #999999 !important;
+    color: #9A9FA5 !important;
+}
+.personQualificationsStyle {
+    color: #000000;
+    font-family: Tahoma;
+    font-size: 8pt;
+    width: 641px;
+    height: 18px;
+    border: 1px solid #CCD0D6;
+    background-color: #FFFFFF;
+}
+
+.lookupAddDivClass500X800 {
+    position: absolute;
+    top: 0px;
+    left: 90px;
+    width: 800px;
+    visibility: hidden;
+    z-index: 100;
+}
+
+#tempComponent {
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+#employeeMainDataPanel {
+    position: relative;
+}
+
+#employeeMainDataPanel img[onclick="employees_5FhireDate1CalendarVar._popUpCalendar(this,document.getElementById('employees_hireDate1'),'dd/MM/yyyy')"], #employeeMainDataPanel img[onclick="employees_5Fstart_5Fwork_5FdateCalendarVar._popUpCalendar(this,document.getElementById('employees_start_work_date'),'dd/MM/yyyy')"], #employeeMainDataPanel img[onclick="qualificationDateTwoCalendarVar._popUpCalendar(this,document.getElementById('qualificationDateTwo'),'dd/MM/yyyy')"], #searchPanel img[onclick="startWork_5FDateCalendarVar._popUpCalendar(this,document.getElementById('startWork_Date'),'dd/MM/yyyy')"], #hiredecisonSearch img[onclick="hireDateFrom_5FDateCalendarVar._popUpCalendar(this,document.getElementById('hireDateFrom_Date'),'dd/MM/yyyy')"], #hiredecisonSearch img[onclick="hireDateTo_5FDateCalendarVar._popUpCalendar(this,document.getElementById('hireDateTo_Date'),'dd/MM/yyyy')"], #searchArea img[onclick="assignment_5Ffrom_5FdateCalendarVar._popUpCalendar(this,document.getElementById('assignment_from_date'),'dd/MM/yyyy')"], #searchArea img[onclick="assignment_5Fto_5FdateCalendarVar._popUpCalendar(this,document.getElementById('assignment_to_date'),'dd/MM/yyyy')"], #employeeMainDataPanel img[onclick="frmdateCalendarVar._popUpCalendar(this,document.getElementById('frmdate'),'dd/MM/yyyy')"], img[onclick="go_5Fwork_5FdateCalendarVar._popUpCalendar(this,document.getElementById('go_work_date'),'dd/MM/yyyy')"], .clndr_maintain_regDate12 img[src="/emp/app/media/images/icon_calendar.jpg"], .registrationObtainDate2 img[src="/emp/app/media/images/icon_calendar.jpg"], .hireDateFrom_Date img[src="/emp/app/media/images/icon_calendar.jpg"], .hireDateTo_Date img[src="/emp/app/media/images/icon_calendar.jpg"] {
+    background: url('../../images/cal.gif')!important;
+    height: 16px !important;
+    width: 16px !important;
+    margin-right: -18px;
+    margin-top: 3px;
+    position: absolute;
+}
+
+.sendingDate_DataTableCalender img[src="/emp/app/media/images/icon_calendar.jpg"], .resultDate_DataTableCalender img[src="/emp/app/media/images/icon_calendar.jpg"] {
+    background: url('../../images/cal.gif')!important;
+    height: 16px !important;
+    width: 16px !important;
+    margin-right: -18px;
+    margin-top: 3px;
+    position: relative;
+    top: -4px !important;
+}
+
+.hireDateTo_Date .jscalendar-DB-table-style, .hireDateFrom_Date .jscalendar-DB-table-style {
+    left: 199px !important;
+    position: absolute !important;
+    top: 131px !important;
+}
+
+.hireDateTo_Date .jscalendar-DB-dropdown-style, .hireDateFrom_Date .jscalendar-DB-dropdown-style {
+    left: 242px !important;
+    position: absolute !important;
+    top: 115px !important;
+}
+
+.registrationObtainDate2 .jscalendar-DB-table-style {
+    left: -38px;
+    position: absolute;
+    top: -173px;
+    width: 250px;
+}
+
+img[onclick="canditatesDateFromCalendarVar._popUpCalendar(this,document.getElementById('canditatesDateFrom'),'dd/MM/yyyy')"], img[onclick="canditatesDateToCalendarVar._popUpCalendar(this,document.getElementById('canditatesDateTo'),'dd/MM/yyyy')"], img[onclick="integratereq_5Fstart_5FdateCalendarVar._popUpCalendar(this,document.getElementById('integratereq_start_date'),'dd/MM/yyyy')"], img[onclick="integratereq_5Fend_5FdateCalendarVar._popUpCalendar(this,document.getElementById('integratereq_end_date'),'dd/MM/yyyy')"] {
+    background: url('../../images/cal.gif')!important;
+    height: 16px !important;
+    width: 16px !important;
+    margin-right: -18px;
+    margin-top: 3px;
+    position: absolute;
+}
+
+.cust_clendr_pos2 .jscalendar-DB-table-style {
+    position: fixed !important;
+    top: 150px;
+    left: 250px;
+}
+
+.divDetailsHead {
+    background: linear-gradient(#BFD7E8, #2779B2)repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    display: block;
+    height: 35px;
+    min-height: 35px;
+    width: 100%;
+}
+
+.popup_body {
+    background-color: #FFFFFF;
+    border-radius: 6px;
+    color: #175179;
+    font-family: arial;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px;
+    padding: 5px 20px 10px;
+    position: relative;
+    text-align: center;
+}
+
+.col1_WC {
+    /* width:100px !important;*/
+
+    white-space: nowrap;
+    padding-left: 3px;
+    padding-right: 2px;
+}
+
+/*.divSearch {
+    position: absolute;
+    top: 30px !important;
+    left: 13%;
+    width: 550px !important;
+    visibility: hidden;
+    z-index: 100;
+    direction: rtl;
+    background-color: #2779b2;
+    background-image: url('../../images/popup_bg.jpg');
+    background-repeat: repeat-x;
+    background-position: top right;
+    border: 1px solid #2779b2;
+    border-radius: 6px;
+    outline: 0;
+    -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+    background-clip: padding-box;
+}*/
+
+.divREGIntegrate {
+    right: 9.75% !important;
+    width: 800px !important;
+}
+
+/*.review_divMainContent1_empCycle {
+    height: 425px;
+    overflow-y: auto;
+    width: 100%;
+}*/
+.QulImg{
+    background: url('../../images/homepage/emp_logo.png') no-repeat !important;
+    height: 174px !important;
+    width: 244px !important;
+    margin-left: 37px !important;
+    margin-top: 255px !important;
+}
+
+.divSearch {
+    position: absolute;
+    top: 40px;
+    width: 500px;
+    z-index: 100;
+}
+.gtree2 {
+    overflow-x: auto !important;
+}

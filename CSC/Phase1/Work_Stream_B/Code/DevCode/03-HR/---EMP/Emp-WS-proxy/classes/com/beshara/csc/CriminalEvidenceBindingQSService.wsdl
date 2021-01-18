@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<WL5G3N0:definitions targetNamespace="http://www.moi.gov.kw/Services/CriminalEvidenceService/V1/Definitions" xmlns:WL5G3N0="http://schemas.xmlsoap.org/wsdl/" xmlns:WL5G3N1="http://www.moi.gov.kw/Common/V1/MoiCommonError" xmlns:WL5G3N2="http://www.moi.gov.kw/Common/V1/MoiHeader" xmlns:WL5G3N3="http://www.moi.gov.kw/Services/CriminalEvidenceService/V1/Definitions" xmlns:WL5G3N4="http://schemas.xmlsoap.org/wsdl/soap/">
+  <WL5G3N0:types>
+    <xsd:schema xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:ns0="http://www.moi.gov.kw/Services/CriminalEvidenceService/V1/Definitions" xmlns:soap11="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:wsp200409="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsp200607="http://www.w3.org/2006/07/ws-policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <xsd:import namespace="http://www.moi.gov.kw/Common/V1/MoiCommonError" schemaLocation="SYS_DEF.xsd"/>
+      <xsd:import namespace="http://www.moi.gov.kw/Common/V1/MoiHeader" schemaLocation="SYS_DEF_1.xsd"/>
+      <xsd:import namespace="http://www.moi.gov.kw/Services/CriminalEvidenceService/V1/Definitions" schemaLocation="SYS_DEF_2.xsd"/>
+    </xsd:schema>
+  </WL5G3N0:types>
+  <WL5G3N0:message name="InquireGoodBehaviorCertificateDataFaultMsg">
+    <WL5G3N0:part element="WL5G3N1:MoiCommonError" name="MoiCommonError"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="InquireGoodBehaviorCertificateDataRequestMsg">
+    <WL5G3N0:part element="WL5G3N2:MoiHeader" name="MoiHeader"/>
+    <WL5G3N0:part element="WL5G3N3:InquireGoodBehaviorCertificateData" name="InquireGoodBehaviorCertificateDataRequestParam"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="InquireGoodBehaviorCertificateDataResponseMsg">
+    <WL5G3N0:part element="WL5G3N2:MoiHeader" name="MoiHeader"/>
+    <WL5G3N0:part element="WL5G3N3:InquireGoodBehaviorCertificateDataResponse" name="InquireGoodBehaviorCertificateDataResponseParam"/>
+  </WL5G3N0:message>
+  <WL5G3N0:portType name="CriminalEvidenceService">
+    <WL5G3N0:operation name="inquireGoodBehaviorCertificateData">
+      <WL5G3N0:input message="WL5G3N3:InquireGoodBehaviorCertificateDataRequestMsg" name="inquireGoodBehaviorCertificateDataRequest"/>
+      <WL5G3N0:output message="WL5G3N3:InquireGoodBehaviorCertificateDataResponseMsg" name="inquireGoodBehaviorCertificateDataResponse"/>
+      <WL5G3N0:fault message="WL5G3N3:InquireGoodBehaviorCertificateDataFaultMsg" name="moiCommonError"/>
+    </WL5G3N0:operation>
+  </WL5G3N0:portType>
+  <WL5G3N0:binding name="CriminalEvidenceBinding" type="WL5G3N3:CriminalEvidenceService">
+    <WL5G3N4:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <WL5G3N0:operation name="inquireGoodBehaviorCertificateData">
+      <WL5G3N4:operation soapAction="http://www.moi.gov.kw/Services/CriminalEvidenceService/V1/inquireGoodBehaviorCertificateData" style="document"/>
+      <WL5G3N0:input name="inquireGoodBehaviorCertificateDataRequest">
+        <WL5G3N4:body parts="InquireGoodBehaviorCertificateDataRequestParam" use="literal"/>
+        <WL5G3N4:header message="WL5G3N3:InquireGoodBehaviorCertificateDataRequestMsg" part="MoiHeader" use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output name="inquireGoodBehaviorCertificateDataResponse">
+        <WL5G3N4:body parts="InquireGoodBehaviorCertificateDataResponseParam" use="literal"/>
+        <WL5G3N4:header message="WL5G3N3:InquireGoodBehaviorCertificateDataResponseMsg" part="MoiHeader" use="literal"/>
+      </WL5G3N0:output>
+      <WL5G3N0:fault name="moiCommonError">
+        <WL5G3N4:fault name="moiCommonError" use="literal"/>
+      </WL5G3N0:fault>
+    </WL5G3N0:operation>
+  </WL5G3N0:binding>
+  <WL5G3N0:service name="CriminalEvidenceBindingQSService">
+    <WL5G3N0:documentation>OSB Service</WL5G3N0:documentation>
+    <WL5G3N0:port binding="WL5G3N3:CriminalEvidenceBinding" name="CriminalEvidenceBindingQSPort">
+      <WL5G3N4:address location="http://sbservices.csc.gov.kw:80/CSCServices/ProxyServices/MOIGBC_ProxySrv"/>
+    </WL5G3N0:port>
+  </WL5G3N0:service>
+</WL5G3N0:definitions>

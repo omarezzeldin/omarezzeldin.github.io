@@ -1,0 +1,60 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<JLibraryNode nselem="JLibraryNode" class="oracle.jdeveloper.library.JLibraryNode" deployedByDefault="true" xmlns="http://xmlns.oracle.com/jdeveloper/110000jlibrarynode">
+   <classPath>
+      <entries>
+         <Item path="../../../lib/other/xml/stax-api-1.0.1.jar" jar-entry=""/>
+         <Item path="../../../lib/other/xml/stax-1.2.0.jar" jar-entry=""/>
+         <Item path="../../../lib/other/xml/xpp3-1.1.4c.jar" jar-entry=""/>
+         <Item path="../../../lib/other/xml/simple-xml-2.7.1.jar" jar-entry=""/>
+         <Item path="../../../lib/other/apache/commons/codec/commons-codec-1.9.jar" jar-entry=""/>
+         <Item path="../../../lib/other/apache/commons/lang/commons-lang3-3.2.1.jar" jar-entry=""/>
+         <Item path="../../../lib/other/apache/commons/lang/commons-lang-2.6.jar" jar-entry=""/>
+         <Item path="../../../lib/beshara/commons/core/bg-commons-core-1.5.0.jar" jar-entry=""/>
+         <Item path="../../../lib/beshara/locking/base/locking-base-2.2.0.jar" jar-entry=""/>
+         <Item path="../../../lib/beshara/locking/web-service-proxy/locking-web-service-proxy-2.2.0.jar" jar-entry=""/>
+		 <Item path="../../../lib/other/apache/log4j/log4j-1.2.17.jar" jar-entry=""/>		 
+         <Item path="../../../lib/other/logging/sl4j1.7.5/slf4j-api-1.7.5.jar" jar-entry=""/>
+         <Item path="../../../lib/other/logging/sl4j1.7.5/slf4j-log4j12-1.7.5.jar" jar-entry=""/>
+         <Item path="../../../lib/beshara/csc/business/base/cement-j-1.0.jar" jar-entry=""/>
+         <Item path="../../../lib/beshara/csc/locking/web-service-proxy-ext/locking-web-service-proxy-ext-2.2.0.jar" jar-entry=""/>
+         <Item path="../../../lib/beshara/csc/security/sec/utils/sec-utils-1.3.0.jar" jar-entry=""/>
+         <Item path="../../../lib/beshara/wfl-int/wfl-int-proxy-1.0.jar" jar-entry=""/>
+         <Item path="../../../lib/beshara/csc/business/base/base-3.2.1.jar" jar-entry=""/>
+		 <!-- DED -->
+		 <Item path="../../../lib/other/hibernate/3.6/hibernate-jpa-2.0-api-1.0.1.Final.jar" jar-entry=""/>
+		 <Item path="../../../lib/other/hibernate/3.6/hibernate3.jar" jar-entry=""/>
+		 <Item path="../../../lib/other/hibernate/3.6/jta-1.1.jar" jar-entry=""/>
+		 <Item path="../../../lib/other/xml/dom4j-1.6.1.jar" jar-entry=""/>
+		 <Item path="../../../lib/other/apache/commons/logging/commons-logging-1.1.3.jar" jar-entry=""/>
+		 <Item path="../../../lib/other/apache/commons/dbcp/commons-dbcp-1.4.jar" jar-entry=""/>
+         <Item path="../../../lib/other/spring/3.0.5/org.springframework.aop-3.0.5.RELEASE.jar" jar-entry=""/>
+         <Item path="../../../lib/other/spring/3.0.5/org.springframework.asm-3.0.5.RELEASE.jar" jar-entry=""/>
+         <Item path="../../../lib/other/spring/3.0.5/org.springframework.aspects-3.0.5.RELEASE.jar" jar-entry=""/>
+         <Item path="../../../lib/other/spring/3.0.5/org.springframework.beans-3.0.5.RELEASE.jar" jar-entry=""/>
+         <Item path="../../../lib/other/spring/3.0.5/org.springframework.context-3.0.5.RELEASE.jar" jar-entry=""/>
+         <Item path="../../../lib/other/spring/3.0.5/org.springframework.context.support-3.0.5.RELEASE.jar" jar-entry=""/>
+         <Item path="../../../lib/other/spring/3.0.5/org.springframework.core-3.0.5.RELEASE.jar" jar-entry=""/>
+         <Item path="../../../lib/other/spring/3.0.5/org.springframework.expression-3.0.5.RELEASE.jar" jar-entry=""/>
+         <Item path="../../../lib/other/spring/3.0.5/org.springframework.jdbc-3.0.5.RELEASE.jar" jar-entry=""/>
+         <Item path="../../../lib/other/spring/3.0.5/org.springframework.orm-3.0.5.RELEASE.jar" jar-entry=""/>
+         <Item path="../../../lib/other/spring/3.0.5/org.springframework.test-3.0.5.RELEASE.jar" jar-entry=""/>
+         <Item path="../../../lib/other/spring/3.0.5/org.springframework.transaction-3.0.5.RELEASE.jar" jar-entry=""/>
+		 <Item path="../../../lib/other/shared/junit-4.8.2.jar" jar-entry=""/>
+		 <Item path="../../../lib/other/shared/dbunit-2.4.8.jar" jar-entry=""/>
+         <Item path="../../../lib/other/shared/antlr-2.7.7.jar" jar-entry=""/>		 
+         <Item path="../../../lib/other/aop/aopalliance-1.0.jar" jar-entry=""/>
+         <Item path="../../../lib/other/aop/aspectjrt-1.6.11.RELEASE.jar" jar-entry=""/>
+         <Item path="../../../lib/other/aop/aspectjweaver-1.6.11.RELEASE.jar" jar-entry=""/>
+         <Item path="../../../lib/other/bytecode/javassist-3.14.0-GA.jar" jar-entry=""/>
+		 <Item path="../../../lib/beshara/csc/business/toplink-essentials/toplink-essentials-2.1-60f-1.0.jar" jar-entry=""/>
+      </entries>
+   </classPath>
+   <docPath>
+      <entries class="[Ljava.net.URL;"/>
+   </docPath>
+   <locked>false</locked>
+   <name>DED-Business-3.2.1</name>
+   <sourcePath>
+      <entries class="[Ljava.net.URL;"/>
+   </sourcePath>
+</JLibraryNode>

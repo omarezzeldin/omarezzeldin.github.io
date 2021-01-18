@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<xsd:schema targetNamespace="http://www.moi.gov.kw/Services/CriminalEvidenceService/V1/Types" xmlns:Q1="http://www.moi.gov.kw/Services/CriminalEvidenceService/V1/Types" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:complexType name="MoiGoodBehaviorCertificateDataOut">
+    <xsd:sequence>
+      <xsd:element name="civilId" type="xsd:string" nillable="true" minOccurs="1" maxOccurs="1"/>
+      <xsd:element name="errorCode" type="xsd:string" nillable="true" minOccurs="1" maxOccurs="1"/>
+      <xsd:element name="errorMessage" type="xsd:string" nillable="true" minOccurs="1" maxOccurs="1"/>
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>

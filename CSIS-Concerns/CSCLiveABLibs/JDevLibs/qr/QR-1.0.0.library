@@ -1,0 +1,23 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<JLibraryNode nselem="JLibraryNode" class="oracle.jdeveloper.library.JLibraryNode" deployedByDefault="true" xmlns="http://xmlns.oracle.com/jdeveloper/110000jlibrarynode">
+   <classPath>
+      <entries>
+         <Item path="../../lib/beshara/pdfUtil/pdfUtil.jar" jar-entry=""/>
+         <Item path="../../lib/other/qr/jai-imageio-core-1.3.1.jar" jar-entry=""/>
+		 <Item path="../../lib/other/qr/jcommander-1.48.jar" jar-entry=""/>
+		 <Item path="../../lib/other/qr/qrgen-1.2.jar" jar-entry=""/>
+		 <Item path="../../lib/other/qr/zxing-1.6-core.jar" jar-entry=""/>
+		 <Item path="../../lib/other/qr/zxing-javase.jar" jar-entry=""/>
+		 <Item path="../../lib/other/watermark/PDFWatermark-1.0.jar" jar-entry=""/>
+		 <Item path="../../lib/other/watermark/com.lowagie.text-2.1.7.jar" jar-entry=""/>
+      </entries>
+   </classPath>
+   <docPath>
+      <entries class="[Ljava.net.URL;"/>
+   </docPath>
+   <locked>false</locked>
+   <name>QR-1.0.0</name>
+   <sourcePath>
+      <entries class="[Ljava.net.URL;"/>
+   </sourcePath>
+</JLibraryNode>

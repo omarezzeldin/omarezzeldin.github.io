@@ -1,0 +1,4 @@
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+  <system systemId="http://sbservices.csc.gov.kw/CSCServices/ProxyServices/MOIGBC_ProxySrv?wsdl#%7Bhttp%3A%2F%2Fwww.moi.gov.kw%2FServices%2FCriminalEvidenceService%2FV1%2FDefinitions%7DCriminalEvidenceBindingQSService"
+          uri="../com/beshara/csc/CriminalEvidenceBindingQSService.wsdl"/>
+</catalog>

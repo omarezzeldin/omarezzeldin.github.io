@@ -1,0 +1,48 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<JLibraryNode nselem="JLibraryNode" class="oracle.jdeveloper.library.JLibraryNode" deployedByDefault="true" xmlns="http://xmlns.oracle.com/jdeveloper/110000jlibrarynode">
+   <classPath>
+      <entries>
+         <Item path="../../../lib/beshara/commons/base64-utils.jar" jar-entry=""/>
+         <Item path="../../../lib/beshara/logging/logback-utils-1.0.0.jar" jar-entry=""/>
+         <Item path="../../../lib/beshara/sso/Sso-base-1.1.0.jar" jar-entry=""/>
+         <Item path="../../../lib/beshara/sso/Sso-core-1.1.0.jar" jar-entry=""/>
+         <Item path="../../../lib/beshara/sso/sso-web-utils-1.1.0.jar" jar-entry=""/>
+         <Item path="../../../lib/beshara/sec/Sec-core-1.1.0.jar" jar-entry=""/>
+         <Item path="../../../lib/beshara/sec/sec-engine-1.1.0.jar" jar-entry=""/>
+         <Item path="../../../lib/beshara/sec/csc/sec-engine-ext-1.1.0.jar" jar-entry=""/>
+         <Item path="../../../lib/beshara/sec/csc/Sec-info-handler-1.1.0.jar" jar-entry=""/>
+         <Item path="../../../lib/beshara/sec/sec-jsf-handler-1.1.0.jar" jar-entry=""/>
+         <Item path="../../../lib/beshara/sec/csc/sec-jsf-handler-ext-1.1.0.jar" jar-entry=""/>
+         <Item path="../../../lib/beshara/commons/web/bg-commons-web-2.0.0.jar" jar-entry=""/>
+         <Item path="../../../lib/other/presenation/Jdom.jar" jar-entry=""/>
+         <Item path="../../../lib/other/commons/commons-lang-2.1.jar" jar-entry=""/>
+         <Item path="../../../lib/other/presenation/Commons-beanutils-1.7.0.jar" jar-entry=""/>
+         <Item path="../../../lib/other/presenation/Commons-collections-3.1.jar" jar-entry=""/>
+         <Item path="../../../lib/beshara/commons/jsf/bg-commons-jsf-2.0.0.jar" jar-entry=""/>
+         <Item path="../../../lib/other/presenation/Commons-digester-1.6.jar" jar-entry=""/>
+         <Item path="../../../lib/other/presenation/Commons-el-1.0.jar" jar-entry=""/>
+         <Item path="../../../lib/other/presenation/Commons-fileupload-1.1.1.jar" jar-entry=""/>
+         <Item path="../../../lib/other/presenation/Commons-io-1.4.jar" jar-entry=""/>
+         <Item path="../../../lib/other/presenation/Commons-logging-1.0.4.jar" jar-entry=""/>
+         <Item path="../../../lib/other/presenation/Commons-validator-1.2.0.jar" jar-entry=""/>
+         <Item path="../../../lib/other/presenation/myfaces-api-1.1.5.xx.jar" jar-entry=""/>
+         <Item path="../../../lib/other/presenation/myfaces-impl-1.1.5.xx.jar" jar-entry=""/>
+         <Item path="../../../lib/other/presenation/ajax4jsf-1.1.1.jar" jar-entry=""/>
+         <Item path="../../../lib/beshara/presentation/custom.jar" jar-entry=""/>
+         <Item path="../../../lib/other/presenation/eclientValidators.jar" jar-entry=""/>
+         <Item path="../../../lib/other/presenation/struts.jar" jar-entry=""/>
+         <Item path="../../../lib/other/presenation/htmLib.jar" jar-entry=""/>
+         <Item path="../../../lib/beshara/presentation/htmlrender.jar" jar-entry=""/>
+         <Item path="../../../lib/other/presenation/jstl-1.1.0.jar" jar-entry=""/>
+         <Item path="../../../lib/other/presenation/tomahawk-1.1.5.xx.jar" jar-entry=""/>
+      </entries>
+   </classPath>
+   <docPath>
+      <entries class="[Ljava.net.URL;"/>
+   </docPath>
+   <locked>false</locked>
+   <name>Presentation-1_5</name>
+   <sourcePath>
+      <entries class="[Ljava.net.URL;"/>
+   </sourcePath>
+</JLibraryNode>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<library name="DED-Business-4.0.4" id="oracle..ded-business-4-0-4" deployed="true" xmlns="http://xmlns.oracle.com/jdeveloper/1013/manifest-libraries">
+  <description/>
+  <classpath>../../../lib/other/hibernate/3.6/hibernate-jpa-2.0-api-1.0.1.Final.jar</classpath>
+  <classpath>../../../lib/other/hibernate/3.6/hibernate3.jar</classpath>
+  <classpath>../../../lib/other/hibernate/3.6/jta-1.1.jar</classpath>
+  <classpath>../../../lib/other/xml/dom4j-1.6.1.jar</classpath>
+  <classpath>../../../lib/other/apache/commons/logging/commons-logging-1.1.3.jar</classpath>
+  <classpath>../../../lib/other/apache/commons/dbcp/commons-dbcp-1.4.jar</classpath>
+  <classpath>../../../lib/other/shared/junit-4.8.2.jar</classpath>
+  <classpath>../../../lib/other/shared/dbunit-2.4.8.jar</classpath>
+  <classpath>../../../lib/other/shared/antlr-2.7.7.jar</classpath>
+  <classpath>../../../lib/other/bytecode/javassist-3.14.0-GA.jar</classpath>
+  <classpath>../../../lib/other/aop/aopalliance-1.0.jar</classpath>
+  <classpath>../../../lib/other/aop/aspectjrt-1.8.7.jar</classpath>
+  <classpath>../../../lib/other/aop/aspectjweaver-1.8.7.jar</classpath>
+  <classpath>../../../lib/other/spring/4.0.4/spring-aop-4.0.4.RELEASE.jar</classpath>
+  <classpath>../../../lib/other/spring/4.0.4/spring-aspects-4.0.4.RELEASE.jar</classpath>
+  <classpath>../../../lib/other/spring/4.0.4/spring-beans-4.0.4.RELEASE.jar</classpath>
+  <classpath>../../../lib/other/spring/4.0.4/spring-build-src-4.0.4.RELEASE.jar</classpath>
+  <classpath>../../../lib/other/spring/4.0.4/spring-context-4.0.4.RELEASE.jar</classpath>
+  <classpath>../../../lib/other/spring/4.0.4/spring-context-support-4.0.4.RELEASE.jar</classpath>
+  <classpath>../../../lib/other/spring/4.0.4/spring-core-4.0.4.RELEASE.jar</classpath>
+  <classpath>../../../lib/other/spring/4.0.4/spring-expression-4.0.4.RELEASE.jar</classpath>
+  <classpath>../../../lib/other/spring/4.0.4/spring-framework-bom-4.0.4.RELEASE.jar</classpath>
+  <classpath>../../../lib/other/spring/4.0.4/spring-instrument-4.0.4.RELEASE.jar</classpath>
+  <classpath>../../../lib/other/spring/4.0.4/spring-jdbc-4.0.4.RELEASE.jar</classpath>
+  <classpath>../../../lib/other/spring/4.0.4/spring-jms-4.0.4.RELEASE.jar</classpath>
+  <classpath>../../../lib/other/spring/4.0.4/spring-messaging-4.0.4.RELEASE.jar</classpath>
+  <classpath>../../../lib/other/spring/4.0.4/spring-orm-4.0.4.RELEASE.jar</classpath>
+  <classpath>../../../lib/other/spring/4.0.4/spring-oxm-4.0.4.RELEASE.jar</classpath>
+  <classpath>../../../lib/other/spring/4.0.4/spring-test-4.0.4.RELEASE.jar</classpath>
+  <classpath>../../../lib/other/spring/4.0.4/spring-tx-4.0.4.RELEASE.jar</classpath>
+</library>

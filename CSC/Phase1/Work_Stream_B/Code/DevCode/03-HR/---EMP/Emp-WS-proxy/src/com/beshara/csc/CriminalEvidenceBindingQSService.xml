@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<oracle-webservice-clients xmlns:ns2="http://java.sun.com/xml/ns/javaee">
+   <webservice-client>
+      <service-qname localpart="CriminalEvidenceBindingQSService"
+                     namespaceURI="http://www.moi.gov.kw/Services/CriminalEvidenceService/V1/Definitions"/>
+      <port-info>
+         <wsdl-port localpart="CriminalEvidenceBindingQSPort"
+                    namespaceURI="http://www.moi.gov.kw/Services/CriminalEvidenceService/V1/Definitions"/>
+         <runtime/>
+         <policy-references>
+            <policy-reference uri="oracle/no_authentication_client_policy" category="security"/>
+         </policy-references>
+         <operations>
+            <operation name="inquireGoodBehaviorCertificateData"/>
+         </operations>
+      </port-info>
+   </webservice-client>
+</oracle-webservice-clients>

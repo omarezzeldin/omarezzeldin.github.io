@@ -1,0 +1,6 @@
+<project>
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>lib.beshara.commons.presentation</groupId>
+  <artifactId>bg-commons-presentation</artifactId>  
+  <version>1.5.0</version>
+</project>

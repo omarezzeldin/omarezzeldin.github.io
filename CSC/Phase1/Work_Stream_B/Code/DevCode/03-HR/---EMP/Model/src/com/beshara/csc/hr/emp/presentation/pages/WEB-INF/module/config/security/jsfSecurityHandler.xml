@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<jsfSecurityHandler mode="all" technologyCode="1" pagesFolder="/security/" indexURL="/index.jsf" webPageTypeCode="1"
+                    facetTypeCode="2" treesFolder="/WEB-INF/module/config/security/trees" accessTracingEnabled="true"
+                    loginPlaceHolderBsnObject="6597">
+    <componentsTypesMappings>
+        <componentTypeMapping typeName="org.apache.myfaces.component.html.ext.HtmlPanelGrid" typeCode="3"/>
+        <componentTypeMapping typeName="org.apache.myfaces.component.html.ext.HtmlDataTable" typeCode="4"/>
+        <componentTypeMapping typeName="org.apache.myfaces.component.html.ext.HtmlInputText" typeCode="5"/>
+        <componentTypeMapping typeName="javax.faces.component.html.HtmlForm" typeCode="6"/>
+        <componentTypeMapping typeName="javax.faces.component.html.HtmlOutputText" typeCode="7"/>
+        <componentTypeMapping typeName="org.apache.myfaces.custom.column.HtmlSimpleColumn" typeCode="8"/>
+        <componentTypeMapping typeName="javax.faces.component.html.HtmlCommandButton" typeCode="9"/>
+        <componentTypeMapping typeName="org.apache.myfaces.component.html.ext.HtmlGraphicImage" typeCode="10"/>
+        <componentTypeMapping typeName="javax.faces.component.html.HtmlPanelGroup" typeCode="11"/>
+        <componentTypeMapping typeName="org.apache.myfaces.custom.tree2.HtmlTree" typeCode="12"/>
+        <componentTypeMapping typeName="org.apache.myfaces.custom.sortheader.HtmlCommandSortHeader" typeCode="13"/>
+        <componentTypeMapping typeName="org.apache.myfaces.custom.navmenu.jscookmenu.HtmlCommandJSCookMenu"
+                              typeCode="14"/>
+        <componentTypeMapping typeName="org.apache.myfaces.component.html.ext.HtmlMessages" typeCode="15"/>
+        <componentTypeMapping typeName="org.apache.myfaces.custom.div.Div" typeCode="16"/>
+        <componentTypeMapping typeName="org.apache.myfaces.component.html.ext.HtmlOutputLabel" typeCode="17"/>
+        <componentTypeMapping typeName="org.apache.myfaces.component.html.ext.HtmlSelectOneRadio" typeCode="18"/>
+        <componentTypeMapping typeName="javax.faces.component.UISelectItem" typeCode="19"/>
+        <componentTypeMapping typeName="org.apache.myfaces.component.html.ext.HtmlSelectBooleanCheckbox" typeCode="20"/>
+        <componentTypeMapping typeName="org.apache.myfaces.component.html.ext.HtmlInputHidden" typeCode="21"/>
+        <componentTypeMapping typeName="org.apache.myfaces.component.html.ext.HtmlCommandButton" typeCode="22"/>
+        <componentTypeMapping typeName="org.apache.myfaces.component.html.ext.HtmlOutputText" typeCode="23"/>
+        <componentTypeMapping typeName="org.apache.myfaces.custom.datascroller.HtmlDataScroller" typeCode="24"/>
+        <componentTypeMapping typeName="javax.faces.component.html.HtmlCommandLink" typeCode="25"/>
+        <componentTypeMapping typeName="org.apache.myfaces.custom.navmenu.UINavigationMenuItem" typeCode="26"/>
+        <componentTypeMapping typeName="org.apache.myfaces.component.html.ext.HtmlPanelGroup" typeCode="27"/>
+        <componentTypeMapping typeName="javax.faces.component.html.HtmlPanelGrid" typeCode="28"/>
+        <componentTypeMapping typeName="beshara.sf.jsfcomp.clientvalidators.lengthvalidator.LengthValidator"
+                              typeCode="29"/>
+        <componentTypeMapping typeName="org.apache.myfaces.custom.calendar.HtmlInputCalendar" typeCode="30"/>
+        <componentTypeMapping typeName="org.apache.myfaces.component.html.ext.HtmlSelectOneMenu" typeCode="31"/>
+        <componentTypeMapping typeName="org.apache.myfaces.custom.selectitems.UISelectItems" typeCode="32"/>
+        <componentTypeMapping typeName="javax.faces.component.html.HtmlInputText" typeCode="33"/>
+        <componentTypeMapping typeName="org.ajax4jsf.ajax.html.HtmlAjaxCommandButton" typeCode="34"/>
+        <componentTypeMapping typeName="org.ajax4jsf.ajax.html.HtmlAjaxFunction" typeCode="35"/>
+        <componentTypeMapping typeName="javax.faces.component.UISelectItems" typeCode="36"/>
+        <componentTypeMapping typeName="org.apache.myfaces.custom.aliasbean.AliasBean" typeCode="37"/>
+        <componentTypeMapping typeName="javax.faces.component.html.HtmlOutputLabel" typeCode="38"/>
+        <componentTypeMapping typeName="com.beshara.common.web.jsf.operationbar.HtmlCommandButton" typeCode="50"/>
+        <componentTypeMapping typeName="com.beshara.common.web.jsf.operationbar.UINavigationMenuItem" typeCode="51"/>
+        <componentTypeMapping typeName="javax.faces.component.html.HtmlSelectOneMenu" typeCode="52"/>
+        <componentTypeMapping typeName="org.ajax4jsf.ajax.html.HtmlAjaxRegion" typeCode="53"/>
+        <componentTypeMapping typeName="javax.faces.component.html.HtmlInputTextarea" typeCode="54"/>
+        <componentTypeMapping typeName="com.exadel.htmLib.components.UIBody" typeCode="55"/>
+        <componentTypeMapping typeName="com.exadel.htmLib.components.UIHtml" typeCode="56"/>
+        <componentTypeMapping typeName="com.exadel.htmLib.components.UITable" typeCode="57"/>
+        <componentTypeMapping typeName="com.exadel.htmLib.components.UITr" typeCode="58"/>
+        <componentTypeMapping typeName="com.exadel.htmLib.components.UITd" typeCode="59"/>
+        <componentTypeMapping typeName="com.exadel.htmLib.components.UIDiv" typeCode="60"/>
+    </componentsTypesMappings>
+    <iterativeComponentsClasses>
+        <componentClass value="org.apache.myfaces.component.html.ext.HtmlDataTable"/>
+        <componentClass value="org.apache.myfaces.custom.tree2.HtmlTree"/>
+        <componentClass value="org.apache.myfaces.custom.navmenu.jscookmenu.HtmlCommandJSCookMenu"/>
+    </iterativeComponentsClasses>
+    <!--ignoredFacetsNames>
+    <facetName value="org.ajax4jsf.ajax.SUPPORTonclick"/>
+  </ignoredFacetsNames-->
+    <!--ignoredComponetsClasses>
+    <componentClass value="javax.faces.component.UIOutput"/>
+    <componentClass value="org.apache.myfaces.custom.savestate.UISaveState"/>
+    <componentClass value="javax.faces.component.UIParameter"/>
+    <componentClass value="org.ajax4jsf.ajax.html.HtmlActionParameter"/>
+    <componentClass value="beshara.sf.jsfcomp.clientvalidators.scriptgenerator.ScriptGenerator"/>
+    <componentClass value="org.ajax4jsf.ajax.html.HtmlAjaxSupport"/>
+    <componentClass value="com.beshara.custom.jsf.components.SearchBox"/>
+    <componentClass value="beshara.sf.jsfcomp.clientvalidators.comparedatevalidator.CompareDateValidator"/>    
+    <componentClass value="com.exadel.htmLib.components.UIScript"/>
+    <componentClass value="com.exadel.htmLib.components.UILink"/>
+    <componentClass value="javax.faces.component.html.HtmlOutputLink"/>
+    <componentClass value="com.exadel.htmLib.components.UIImg"/>
+    <componentClass value="com.exadel.htmLib.components.UISpan"/>
+    <componentClass value="org.ajax4jsf.ajax.html.HtmlAjaxStatus"/>
+    <componentClass value="beshara.sf.jsfcomp.clientvalidators.regularexpressionvalidator.RegularExpressionValidator"/>
+    <componentClass value="beshara.sf.jsfcomp.clientvalidators.comparevalidator.CompareValidator"/>
+   <componentClass value="javax.faces.component.html.HtmlInputHidden"/>
+   <componentClass value="beshara.sf.jsfcomp.clientvalidators.dateformatvalidator.DateFormatValidator"/>
+   <componentClass value="org.apache.myfaces.component.html.ext.HtmlMessage"/>
+   <componentClass value="beshara.sf.jsfcomp.clientvalidators.requiredfieldvalidator.RequiredFieldValidator"/>
+   <componentClass value="javax.faces.component.html.HtmlSelectOneRadio"/>
+   <componentClass value="org.apache.myfaces.component.html.ext.HtmlInputTextarea"/>
+   <componentClass value="org.apache.myfaces.custom.fileupload.HtmlInputFileUpload"/>
+   
+  </ignoredComponetsClasses-->
+    <pages>
+        <page viewId="/module/jsps/employmentcycle/selection/fatwa/list.jsp" devObject="11688" bsnObject="11800"/>
+        <page viewId="/module/jsps/reports/reportsFrame.jsp?rep=331" devObject="11704" bsnObject="11816"/>
+        <page viewId="/module/jsps/reports/reportsFrame.jsp?rep=338" devObject="11711" bsnObject="11823"/>
+        <page viewId="/module/jsps/hirestatus/hirestatuslist.jsp" devObject="18785" bsnObject="18959"/>
+        <page viewId="/module/grs/jsps/conditions/conditionslist.jsp" devObject="18803" bsnObject="18977"/>
+        <page viewId="/module/jsps/employee/addcandidatepages/documentscandidate/docAttchmentList.jsp" devObject="18854"
+              bsnObject="19028"/>
+        <page viewId="/module/grs/jsps/conditions/linemaintain.jsp" devObject="19177" bsnObject="19351"/>
+        <page viewId="/module/jsps/employeehistory/list.jsp" devObject="18905" bsnObject="19079"/>
+        <page viewId="/module/jsps/employee/list.jsp" devObject="11690" bsnObject="11802"/>
+        <page viewId="/module/jsps/reports/reportsFrame.jsp?rep=326" devObject="11699" bsnObject="11811"/>
+        <page viewId="/module/jsps/hiretypes/documenttypemaintain.jsp" devObject="18736" bsnObject="18910"/>
+        <page viewId="/module/jsps/hiretypes/proceduresmaintain.jsp" devObject="18824" bsnObject="18998"/>
+        <page viewId="/module/reg/jsps/decision/materials/mainMaintain.jsp" devObject="19221" bsnObject="19395"/>
+        <page viewId="/module/jsps/employmentcycle/selection/jobsArrangement/list.jsp" devObject="11687"
+              bsnObject="11799"/>
+        <page viewId="/module/jsps/councilservice/list.jsp" devObject="11689" bsnObject="11801"/>
+        <page viewId="/module/jsps/hiresearch/hiresearch.jsp" devObject="11693" bsnObject="11805"/>
+        <page viewId="/integration/grs/jsps/exceptions/exceptionslist.jsp" devObject="11694" bsnObject="11806"/>
+        <page viewId="/module/jsps/ilLegalCitizens/list.jsp" devObject="11695" bsnObject="11807"/>
+        <page viewId="/module/jsps/reports/reportsFrame.jsp?rep=324" devObject="11697" bsnObject="11809"/>
+        <page viewId="/module/jsps/reports/reportsFrame.jsp?rep=332" devObject="11705" bsnObject="11817"/>
+        <page viewId="/module/req/jsps/request/requestlist.jsp" devObject="18620" bsnObject="18794"/>
+        <page viewId="/module/jsps/employee/addcandidatepages/documentscandidate/documentscandidate_list.jsp"
+              devObject="18744" bsnObject="18918"/>
+        <page viewId="/module/jsps/hiredecision/hiredecision.jsp" devObject="11691" bsnObject="11803"/>
+        <page viewId="/module/jsps/reports/reportsFrame.jsp?rep=330" devObject="11703" bsnObject="11815"/>
+        <page viewId="/module/jsps/reports/reportsFrame.jsp?rep=333" devObject="11706" bsnObject="11818"/>
+        <page viewId="/module/jsps/reports/reportsFrame.jsp?rep=334" devObject="11707" bsnObject="11819"/>
+        <page viewId="/module/jsps/employee/empQualificationsCandidate_list.jsp" devObject="18682" bsnObject="18856"/>
+        <page viewId="/module/jsps/adminassign/adminassignlist.jsp" devObject="18704" bsnObject="18878"/>
+        <page viewId="/integration/inf/jsps/documentTypes/documentTypesList.jsp" devObject="11683" bsnObject="11795"/>
+        <page viewId="/module/jsps/reports/reportsFrame.jsp?rep=339" devObject="11712" bsnObject="11824"/>
+        <page viewId="/module/jsps/empinternalexperience/list.jsp" devObject="18998" bsnObject="19172"/>
+        <page viewId="/module/jsps/documenttypes/documenttypeslist.jsp" devObject="19043" bsnObject="19217"/>
+        <page viewId="/module/jsps/hiretypes/hiretypeslist.jsp" devObject="19079" bsnObject="19253"/>
+        <page viewId="/module/req/jsps/approval/approvallist.jsp" devObject="19116" bsnObject="19290"/>
+        <page viewId="/module/jsps/reports/reportsFrame.jsp?rep=323" devObject="11696" bsnObject="11808"/>
+        <page viewId="/module/jsps/reports/reportsFrame.jsp?rep=325" devObject="11698" bsnObject="11810"/>
+        <page viewId="/module/jsps/reports/reportsFrame.jsp?rep=335" devObject="11708" bsnObject="11820"/>
+        <page viewId="/module/jsps/reports/reportsFrame.jsp?rep=337" devObject="11710" bsnObject="11822"/>
+        <page viewId="/module/jsps/employee/addcandidatepages/procedurescandidate/procedurescandidate_list.jsp"
+              devObject="18615" bsnObject="18789"/>
+        <page viewId="/module/reg/jsps/decision/decisionlist.jsp" devObject="18647" bsnObject="18821"/>
+        <page viewId="/integration/qul/jsps/qulList/list.jsp" devObject="18747" bsnObject="18921"/>
+        <page viewId="/module/jsps/employment/selection/list.jsp" devObject="18885" bsnObject="19059"/>
+        <page viewId="/module/jsps/employee/experiencelist.jsp" devObject="18950" bsnObject="19124"/>
+        <page viewId="/module/jsps/employee/documents.jsp" devObject="19197" bsnObject="19371"/>
+        <page viewId="/integration/grs/jsps/exceptions/addexception/addexception_list.jsp" devObject="18934"
+              bsnObject="19108"/>
+        <page viewId="/module/jsps/hireprocedures/hireprocedureslist.jsp" devObject="11682" bsnObject="11794"/>
+        <page viewId="/module/jsps/hiretypes/treelist/hiretypestreelist.jsp" devObject="11684" bsnObject="11796"/>
+        <page viewId="/module/jsps/employmentcycle/selection/list.jsp" devObject="11686" bsnObject="11798"/>
+        <page viewId="/module/jsps/reports/reportsFrame.jsp?rep=336" devObject="11709" bsnObject="11821"/>
+        <page viewId="/module/jsps/externalexperience/list.jsp" devObject="18684" bsnObject="18858"/>
+        <page viewId="/module/jsps/employment/experincllist/experincllist.jsp" devObject="18702" bsnObject="18876"/>
+        <page viewId="/module/crs/jsps/proceedingcandidate/list.jsp" devObject="18764" bsnObject="18938"/>
+        <page viewId="/module/jsps/illeagalAccomodation/qualification.jsp" devObject="18852" bsnObject="19026"/>
+        <page viewId="/module/jsps/employee/inneedtype/viewBounsesEstana.jsp" devObject="18856" bsnObject="19030"/>
+        <page viewId="/module/jsps/employee/docAttchmentListInEdit.jsp" devObject="18860" bsnObject="19034"/>
+        <page viewId="/module/jsps/proceedingcandidate/list.jsp" devObject="18874" bsnObject="19048"/>
+        <page viewId="/module/jsps/employee/contractemployees/viewBounses.jsp" devObject="19058" bsnObject="19232"/>
+        <page viewId="/module/jsps/employee/addcandidatepages/qualificationscandidate/qualificationsCandidate_list.jsp"
+              devObject="19193" bsnObject="19367"/>
+        <page viewId="/module/jsps/hirestages/hirestageslist.jsp" devObject="11685" bsnObject="11797"/>
+        <page viewId="/module/jsps/empexecute/empexecutelist.jsp" devObject="11692" bsnObject="11804"/>
+        <page viewId="/module/jsps/reports/reportsFrame.jsp?rep=327" devObject="11700" bsnObject="11812"/>
+        <page viewId="/module/jsps/reports/reportsFrame.jsp?rep=328" devObject="11701" bsnObject="11813"/>
+        <page viewId="/module/jsps/reports/reportsFrame.jsp?rep=329" devObject="11702" bsnObject="11814"/>
+        <page viewId="/module/jsps/reports/reportsFrame.jsp?rep=1182" devObject="24318" bsnObject="24104"/>
+        
+        <page viewId="/integration/inf/jsps/adddocAttachments/docAttchmentList.jsp" devObject="18801"
+              bsnObject="18975"/>
+        <page viewId="/module/jsps/employmentcycle/shared/allowancesAnbonuses/addbounce.jsp" devObject="18858"
+              bsnObject="19032"/>
+        <page viewId="/module/reg/jsps/decision/decisionemployeesmaintain.jsp" devObject="19033" bsnObject="19207"/>
+        <page viewId="/module/jsps/sendprocedure/list.jsp" devObject="19060" bsnObject="19234"/>
+        <page viewId="/module/jsps/adminassignfinish/adminassignfinishlist.jsp" devObject="19096" bsnObject="19270"/>
+        <page viewId="/module/jsps/councilservice/review/addbounses.jsp" devObject="19141" bsnObject="19315"/>
+        <page viewId="/module/reg/jsps/decision/decisionreferencesmaintain.jsp" devObject="19143" bsnObject="19317"/>
+        <page viewId="/module/jsps/employmentcycle/experincllist/experincllist.jsp" devObject="19195"
+              bsnObject="19369"/>
+        <page viewId="/module/jsps/employee/addcandidatepages/experience/experience_list.jsp" devObject="19209"
+              bsnObject="19383"/>
+        <page viewId="/module/jsps/employee/procedures.jsp" devObject="18897" bsnObject="19071"/>
+        <page viewId="/module/jsps/assignreason/assignreasonlist.jsp" devObject="18935" bsnObject="19109"/>
+        <page viewId="/module/jsps/correcthireprocedures/list.jsp" devObject="24270" bsnObject="24097"/>
+        
+        <page viewId="/module/jsps/reports/reportsFrame.jsp?rep=1442" devObject="24377" bsnObject="24143"/>
+        
+        <page viewId="/module/jsps/queryAboutEmployee/list.jsp" devObject="30282" bsnObject="30491"/> 
+        <page viewId="/integration/emp/jsps/employeedatarevision/governmentalemployeedatarevision/seventhstep.jsp" devObject="32597" bsnObject="32797"/>
+        <page viewId="/integration/emp/jsps/employeedatarevision/governmentalemployeedatarevision/sixthstep.jsp" devObject="32596" bsnObject="32796"/>
+        <page viewId="/integration/emp/jsps/employeedatarevision/governmentalemployeedatarevision/secondstep.jsp" devObject="32592" bsnObject="32792"/>
+        <page viewId="/integration/emp/jsps/employeedatarevision/governmentalemployeedatarevision/thirdstep.jsp" devObject="32593" bsnObject="32793"/>
+        <page viewId="/integration/emp/jsps/employeedatarevision/governmentalemployeedatarevision/forthstep.jsp" devObject="32594" bsnObject="32794"/>
+        <page viewId="/integration/emp/jsps/employeedatarevision/governmentalemployeedatarevision/fifthstep.jsp" devObject="32595" bsnObject="32795"/>
+        <page viewId="/integration/emp/jsps/employeedatarevision/governmentalemployeedatarevision/eighthstep.jsp" devObject="32598" bsnObject="32798"/>
+        
+
+
+    </pages>
+</jsfSecurityHandler>

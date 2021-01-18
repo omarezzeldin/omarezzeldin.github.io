@@ -1,0 +1,6 @@
+<project>
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>lib.beshara.csc.presentation.jsf-base</groupId>
+  <artifactId>jsf-base</artifactId>  
+  <version>2.5.3</version>
+</project>

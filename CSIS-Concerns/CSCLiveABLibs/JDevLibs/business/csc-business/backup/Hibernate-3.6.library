@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<JLibraryNode nselem="JLibraryNode" class="oracle.jdeveloper.library.JLibraryNode" deployedByDefault="true" xmlns="http://xmlns.oracle.com/jdeveloper/110000jlibrarynode">
+   <classPath>
+      <entries>
+         <Item path="../../../lib/other/business/hibernate/3.6/hibernate-jpa-2.0-api-1.0.1.Final.jar" jar-entry=""/>
+         <Item path="../../../lib/other/business/hibernate/3.6/hibernate3.jar" jar-entry=""/>
+         <Item path="../../../lib/other/business/hibernate/3.6/jta-1.1.jar" jar-entry=""/>
+      </entries>
+   </classPath>
+   <docPath>
+      <entries class="[Ljava.net.URL;"/>
+   </docPath>
+   <locked>false</locked>
+   <name>Hibernate-3.6</name>
+   <sourcePath>
+      <entries class="[Ljava.net.URL;"/>
+   </sourcePath>
+</JLibraryNode>

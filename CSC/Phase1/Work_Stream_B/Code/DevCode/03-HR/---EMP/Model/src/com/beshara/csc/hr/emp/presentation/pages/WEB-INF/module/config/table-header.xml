@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<TableHeaders>
+    <!-- Example Page table Header -->
+    <pagename>
+        <component type="button" code="addButton" name="#{globalResources.addButton}" action="ajax:#{BeanName.preAdd}" onComplete="javascript:changeVisibilityDiv(window.blocker,window.lookupAddDiv);" selectionFlag="0" rerender="divAddLookup" styleclass="tableHeaderAddButton"/>
+        <component type="button" code="editButton" name="#{globalResources.EditButton}" action="ajax:#{BeanName.showEditDiv}" selectionFlag="1" onComplete="changeVisibilityDiv(window.blocker,window.lookupEditDiv);" rerender="divEditLookup" styleclass="tableHeaderEditButton"/>
+        <component type="button" code="delButton" name="#{globalResources.DeleteButton}" action="javascript:changeVisibilityDiv(window.blocker,window.delAlert);" selectionFlag="2" styleclass="tableHeaderDeleteButton"/>
+        
+        <component type="button" code="searchButton" name="#{globalResources.SearchButton}" action="javascript:changeVisibilityDiv(window.blocker,window.divSearch);" selectionFlag="0" styleclass="tableHeaderSearchButton" />
+        <component type="button" code="cancelSearchButton" name="#{globalResources.cancelsearch}" action="#{BeanName.cancelSearch}" selectionFlag="0" styleclass="tableHeaderCancelSearchButton" />
+        <component type="menu" index="0" code="operationMenu" name="#{globalResources.operations_menu}" selectionFlag="0">
+            <component type="subMenu" index="1" code="unCheck" name="#{globalResources.operation_menu_uncheck}" action="#{BeanName.unCheck}" selectionFlag="2"/>
+        </component>
+        <component type="menu" index="2" code="viewMenu" name="#{globalResources.view_menu}" selectionFlag="0">
+            <component type="subMenu" index="3" code="pdf" name="#{globalResources.view_menu_pdf}" selectionFlag="0"/>
+            <component type="subMenu" index="4" code="print" name="#{globalResources.view_menu_print}" selectionFlag="0"/>
+            <component type="subMenu" index="5" code="help" name="#{globalResources.view_menu_help}" selectionFlag="0"/>
+        </component>
+        <component index="6" type="menu" code="orderMenu" name="#{globalResources.order_menu}" selectionFlag="0">
+            <component index="7" type="subMenu" code="code" name="#{globalResources.Code}" action="javascript:doOrderOnTable('codeColumn');" selectionFlag="0"/>
+            <component index="8" type="subMenu" code="name" name="#{globalResources.TableName}" action="javascript:doOrderOnTable('nameColumn');" selectionFlag="0"/>
+        </component>
+    </pagename>
+    <hirestatuspage>
+     <component type="button" code="addButton" name="#{globalResources.addButton}" action="ajax:#{hireStatusListBean.preAdd}" onComplete="javascript:changeVisibilityDiv(window.blocker,window.lookupAddDiv);" rerender="divAddLookup" selectionFlag="0" styleclass="tableHeaderAddButton"/>
+    <component type="button" code="editButton" name="#{globalResources.EditButton}" action="ajax:#{hireStatusListBean.showEditDiv}" selectionFlag="1" onComplete="changeVisibilityDiv(window.blocker,window.lookupEditDiv);" rerender="divEditLookup" styleclass="tableHeaderEditButton"/>
+    <component type="button" code="delButton" name="#{globalResources.DeleteButton}" action="javascript:changeVisibilityDiv(window.blocker,window.delAlert);" selectionFlag="2" styleclass="tableHeaderDeleteButton"/>
+    <component type="button" code="searchButton" name="#{globalResources.SearchButton}" action="javascript:changeVisibilityDiv(window.blocker,window.divSearch);" selectionFlag="0" styleclass="tableHeaderSearchButton"/>
+    <component type="button" code="cancelSearchButton" name="#{globalResources.cancelsearch}" action="#{hireStatusListBean.cancelSearch}" selectionFlag="0" styleclass="tableHeaderCancelSearchButton"/>
+    <component index="0" type="menu" code="operationMenu" name="#{globalResources.operations_menu}">
+            <component index="1" type="subMenu" code="unCheck" name="#{globalResources.operation_menu_uncheck}" action="#{hireStatusListBean.unCheck}" selectionFlag="2"/>
+    </component>
+    <component index="2" type="menu" action="javascript:alertMethod();" code="viewMenu" name="#{globalResources.view_menu}" selectionFlag="0">
+            <component index="3" type="subMenu" code="pdf" name="#{globalResources.view_menu_pdf}" selectionFlag="0"/>
+            <component index="4" type="subMenu" code="print" name="#{globalResources.view_menu_print}" selectionFlag="0"/>
+            <component index="5" type="subMenu" code="help" name="#{globalResources.view_menu_help}" selectionFlag="0"/>
+    </component>
+    <component index="6" type="menu" code="orderMenu" name="#{globalResources.order_menu}" selectionFlag="0">
+            <component index="7" type="subMenu" code="code" name="#{globalResources.Code}" action="javascript:doOrderOnTable('codeColumn');" selectionFlag="0"/>
+            <component index="8" type="subMenu" code="name" name="#{globalResources.TableName}" action="javascript:doOrderOnTable('nameColumn');" selectionFlag="0"/>
+    </component>
+    </hirestatuspage>
+    
+    
+    <documenttypepage>
+     <component type="button" code="addButton" name="#{globalResources.addButton}" action="ajax:#{documentTypesListBean.preAdd}" onComplete="javascript:changeVisibilityDiv(window.blocker,window.lookupAddDiv);" rerender="divAddLookup" selectionFlag="0" styleclass="tableHeaderAddButton"/>
+    <component type="button" code="editButton" name="#{globalResources.EditButton}" action="ajax:#{documentTypesListBean.showEditDiv}" selectionFlag="1" onComplete="changeVisibilityDiv(window.blocker,window.lookupEditDiv);" rerender="divEditLookup" styleclass="tableHeaderEditButton"/>
+    <component type="button" code="delButton" name="#{globalResources.DeleteButton}" action="javascript:changeVisibilityDiv(window.blocker,window.delAlert);" selectionFlag="2" styleclass="tableHeaderDeleteButton"/>
+    <component type="button" code="searchButton" name="#{globalResources.SearchButton}" action="javascript:changeVisibilityDiv(window.blocker,window.divSearch);" selectionFlag="0" styleclass="tableHeaderSearchButton"/>
+    <component type="button" code="cancelSearchButton" name="#{globalResources.cancelsearch}" action="#{documentTypesListBean.cancelSearch}" selectionFlag="0" styleclass="tableHeaderCancelSearchButton"/>
+    <component index="0" type="menu" code="operationMenu" name="#{globalResources.operations_menu}">
+            <component index="1" type="subMenu" code="unCheck" name="#{globalResources.operation_menu_uncheck}" action="#{documentTypesListBean.unCheck}" selectionFlag="2"/>
+    </component>
+    <component index="2" type="menu" action="javascript:alertMethod();" code="viewMenu" name="#{globalResources.view_menu}" selectionFlag="0">
+            <component index="3" type="subMenu" code="pdf" name="#{globalResources.view_menu_pdf}" selectionFlag="0"/>
+            <component index="4" type="subMenu" code="print" name="#{globalResources.view_menu_print}" selectionFlag="0"/>
+            <component index="5" type="subMenu" code="help" name="#{globalResources.view_menu_help}" selectionFlag="0"/>
+    </component>
+    <component index="6" type="menu" code="orderMenu" name="#{globalResources.order_menu}" selectionFlag="0">
+            <component index="7" type="subMenu" code="code" name="#{globalResources.Code}" action="javascript:doOrderOnTable('codeColumn');" selectionFlag="0"/>
+            <component index="8" type="subMenu" code="name" name="#{globalResources.TableName}" action="javascript:doOrderOnTable('nameColumn');" selectionFlag="0"/>
+    </component>
+    </documenttypepage>
+    
+    <hirestagepage>
+     <component type="button" code="addButton" name="#{globalResources.addButton}" action="ajax:#{hireStagesListBean.preAdd}" onComplete="javascript:changeVisibilityDiv(window.blocker,window.lookupAddDiv);" rerender="divAddLookup" selectionFlag="0" styleclass="tableHeaderAddButton"/>
+    <component type="button" code="editButton" name="#{globalResources.EditButton}" action="ajax:#{hireStagesListBean.showEditDiv}" selectionFlag="1" onComplete="changeVisibilityDiv(window.blocker,window.lookupEditDiv);" rerender="divEditLookup" styleclass="tableHeaderEditButton"/>
+    <component type="button" code="delButton" name="#{globalResources.DeleteButton}" action="javascript:changeVisibilityDiv(window.blocker,window.delAlert);" selectionFlag="2" styleclass="tableHeaderDeleteButton"/>
+    <component type="button" code="searchButton" name="#{globalResources.SearchButton}" action="javascript:changeVisibilityDiv(window.blocker,window.divSearch);" selectionFlag="0" styleclass="tableHeaderSearchButton"/>
+    <component type="button" code="cancelSearchButton" name="#{globalResources.cancelsearch}" action="#{hireStagesListBean.cancelSearch}" selectionFlag="0" styleclass="tableHeaderCancelSearchButton"/>
+    <component index="0" type="menu" code="operationMenu" name="#{globalResources.operations_menu}">
+            <component index="1" type="subMenu" code="unCheck" name="#{globalResources.operation_menu_uncheck}" action="#{hireStagesListBean.unCheck}" selectionFlag="2"/>
+    </component>
+    <component index="2" type="menu" action="javascript:alertMethod();" code="viewMenu" name="#{globalResources.view_menu}" selectionFlag="0">
+            <component index="3" type="subMenu" code="pdf" name="#{globalResources.view_menu_pdf}" selectionFlag="0"/>
+            <component index="4" type="subMenu" code="print" name="#{globalResources.view_menu_print}" selectionFlag="0"/>
+            <component index="5" type="subMenu" code="help" name="#{globalResources.view_menu_help}" selectionFlag="0"/>
+    </component>
+    <component index="6" type="menu" code="orderMenu" name="#{globalResources.order_menu}" selectionFlag="0">
+            <component index="7" type="subMenu" code="code" name="#{globalResources.Code}" action="javascript:doOrderOnTable('codeColumn');" selectionFlag="0"/>
+            <component index="8" type="subMenu" code="name" name="#{globalResources.TableName}" action="javascript:doOrderOnTable('nameColumn');" selectionFlag="0"/>
+    </component>
+    
+    </hirestagepage>
+</TableHeaders>

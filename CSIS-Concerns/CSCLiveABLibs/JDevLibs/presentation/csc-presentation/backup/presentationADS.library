@@ -1,0 +1,32 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<JLibraryNode nselem="JLibraryNode" class="oracle.jdeveloper.library.JLibraryNode" deployedByDefault="true" xmlns="http://xmlns.oracle.com/jdeveloper/101303/jlibrarynode">
+   <classPath>
+      <entries>
+         <Item path="../../../lib/other/presenation/commons-beanutils-1.7.0.jar" jar-entry=""/>
+         <Item path="../../../lib/other/presenation/ajax4jsf-1.1.1.jar" jar-entry=""/>
+         <Item path="../../../lib/other/presenation/commons-collections-3.1.jar" jar-entry=""/>
+         <Item path="../../../lib/other/presenation/commons-digester-1.6.jar" jar-entry=""/>
+         <Item path="../../../lib/other/presenation/commons-el-1.0.jar" jar-entry=""/>
+         <Item path="../../../lib/other/presenation/commons-io-1.4.jar" jar-entry=""/>
+         <Item path="../../../lib/other/presenation/commons-fileupload-1.1.1.jar" jar-entry=""/>
+         <Item path="../../../lib/other/presenation/commons-logging-1.0.4.jar" jar-entry=""/>
+         <Item path="../../../lib/other/presenation/commons-validator-1.2.0.jar" jar-entry=""/>
+         <Item path="../../../lib/other/presenation/htmLib.jar" jar-entry=""/>
+         <Item path="../../../lib/other/presenation/jstl-1.1.0.jar" jar-entry=""/>
+         <Item path="../../../lib/other/presenation/myfaces-api-1.1.5.xx.jar" jar-entry=""/>
+         <Item path="../../../lib/other/presenation/myfaces-impl-1.1.5.xx.jar" jar-entry=""/>
+         <Item path="../../../lib/other/presenation/struts.jar" jar-entry=""/>
+         <Item path="../../../lib/other/presenation/tomahawk-1.1.5.xx.jar" jar-entry=""/>
+         <Item path="../../../lib/other/commons/commons-lang-2.1.jar" jar-entry=""/>
+         <Item path="../../../lib/other/commons/commons-codec-1.3.jar" jar-entry=""/>
+      </entries>
+   </classPath>
+   <docPath>
+      <entries class="[Ljava.net.URL;"/>
+   </docPath>
+   <locked>false</locked>
+   <name>presentationADS</name>
+   <sourcePath>
+      <entries class="[Ljava.net.URL;"/>
+   </sourcePath>
+</JLibraryNode>

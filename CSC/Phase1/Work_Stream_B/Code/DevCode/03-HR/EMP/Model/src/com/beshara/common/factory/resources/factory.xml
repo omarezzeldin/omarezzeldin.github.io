@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<factory>
+    <instances>
+        <!-- common instances -->
+        <instance interface="com.beshara.common.namingcontext.NamingContextManager"
+                  implementation="com.beshara.common.namingcontext.NamingContextManagerImpl" loadOnStartup="true"/>
+        <instance interface="com.beshara.common.dao.db.connection.DAODbConnectionManager"
+                  implementation="com.beshara.common.dao.db.connection.DAODbConnectionManagerImpl" loadOnStartup="true"
+                  configFile="res:com/beshara/common/factory/resources/dbConnections.xml"/>
+        <!-- deployment configuration -->
+        <instance interface="com.beshara.base.deploy.IRMIManager"
+                  implementation="com.beshara.base.deploy.WLRMIManager"/>
+        <instance interface="com.beshara.base.deploy.SessionBeanProvider"
+                  implementation="com.beshara.base.deploy.SessionBeanProviderImpl" loadOnStartup="true">
+            <params>
+                <param name="connection" value="deploy"/>
+                <!-- {TODO} set techLog to true in the deployment on test server -->
+                <param name="techLog" value="true"/>
+                <!-- {TODO} set dataAudit to true in the deployment on test server -->
+                <param name="dataAudit" value="true"/>
+                 <param name="dataFiltration" value="true"/>
+                <!-- old -->
+                <!--<param name="earCode" value="11"/>
+                <param name="instanceCode" value="11"/>-->
+                <!--param name="devEmbeddedEars" value="1,2,3"/-->
+                <!-- new-->
+                <param name="earCode" value="17"/>
+                <param name="instanceCode" value="3"/>
+            </params>
+        </instance>
+        <!-- configuration manager instance -->
+        <instance interface="com.beshara.base.config.ConfigManager"
+                  implementation="com.beshara.base.config.ConfigManagerImpl" loadOnStartup="true">
+            <params>
+                <param name="connection" value="deploy"/>
+            </params>
+        </instance>
+    </instances>
+</factory>

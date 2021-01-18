@@ -1,0 +1,6 @@
+<project>
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>lib.beshara.csc.business.proxy.prl</groupId>
+  <artifactId>bgt-proxy</artifactId>
+  <version>1.0</version>
+</project>

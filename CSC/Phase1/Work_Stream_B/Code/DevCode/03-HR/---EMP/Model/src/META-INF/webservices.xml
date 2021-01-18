@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<j2ee:webservices xmlns:j2ee="http://java.sun.com/xml/ns/j2ee"><j2ee:webservice-description>
+<j2ee:webservice-description-name>EmployeeEServiceImplService</j2ee:webservice-description-name>
+<j2ee:port-component><j2ee:port-component-name>EmployeeEServiceImplPort</j2ee:port-component-name>
+<j2ee:wsdl-port xmlns:emp="http://employee.eservices.integration.business.emp.hr.csc.beshara.com/">emp:EmployeeEServiceImplPort</j2ee:wsdl-port>
+<j2ee:service-endpoint-interface>com.beshara.csc.hr.emp.business.integration.eservices.employee.IEmployeeEService</j2ee:service-endpoint-interface>
+<j2ee:service-impl-bean><j2ee:ejb-link>EmpEmployeeEService</j2ee:ejb-link></j2ee:service-impl-bean></j2ee:port-component></j2ee:webservice-description></j2ee:webservices>

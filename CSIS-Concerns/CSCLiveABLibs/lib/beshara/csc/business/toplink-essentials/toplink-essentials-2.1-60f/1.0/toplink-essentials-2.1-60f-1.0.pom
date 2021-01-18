@@ -1,0 +1,6 @@
+<project>
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>lib.beshara.csc.business.toplink-essentials</groupId>
+  <artifactId>toplink-essentials-2.1-60f</artifactId>
+  <version>1.0</version>
+</project>

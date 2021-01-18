@@ -1,0 +1,6 @@
+<project>
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>lib.beshara.csc.security.sec.utils</groupId>
+  <artifactId>sec-utils</artifactId>
+  <version>1.4.8</version>
+</project>

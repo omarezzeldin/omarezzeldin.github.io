@@ -1,0 +1,6 @@
+<project>
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>lib.beshara.csc.business.base</groupId>
+  <artifactId>base</artifactId>  
+  <version>3.8.6</version>
+</project>

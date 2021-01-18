@@ -1,0 +1,33 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<JLibraryNode nselem="JLibraryNode" class="oracle.jdeveloper.library.JLibraryNode" deployedByDefault="true" xmlns="http://xmlns.oracle.com/jdeveloper/110000jlibrarynode">
+   <classPath>
+      <entries>
+         <Item path="../../../lib/other/xml/stax-api-1.0.1.jar" jar-entry=""/>
+         <Item path="../../../lib/other/xml/stax-1.2.0.jar" jar-entry=""/>
+         <Item path="../../../lib/other/xml/xpp3-1.1.4c.jar" jar-entry=""/>
+         <Item path="../../../lib/other/xml/simple-xml-2.7.1.jar" jar-entry=""/>
+         <Item path="../../../lib/other/apache-commons/commons-codec-1.8.jar" jar-entry=""/>
+         <Item path="../../../lib/other/apache-commons/commons-lang-2.6.jar" jar-entry=""/>
+         <Item path="../../../lib/beshara/commons/core/bg-commons-core-1.4.0.jar" jar-entry=""/>
+         <Item path="../../../lib/beshara/locking/base/locking-base-2.2.0.jar" jar-entry=""/>
+         <Item path="../../../lib/beshara/locking/web-service-proxy/locking-web-service-proxy-2.2.0.jar" jar-entry=""/>
+         <Item path="../../../lib/other/logging/log4j-1.2.17.jar" jar-entry=""/>
+		 <Item path="../../../lib/other/logging/sl4j1.7.5/slf4j-api-1.7.5.jar" jar-entry=""/>
+		 <Item path="../../../lib/other/logging/sl4j1.7.5/slf4j-log4j12-1.7.5.jar" jar-entry=""/>
+         <Item path="../../../lib/beshara/csc/business/base/cement-j-1.0.jar" jar-entry=""/>
+		 <Item path="../../../lib/other/business/toplink-essentials.jar" jar-entry=""/>		 
+		 <Item path="../../../lib/beshara/csc/business/base/base-3.2.0.jar" jar-entry=""/>
+         <Item path="../../../lib/beshara/csc/locking/web-service-proxy-ext/locking-web-service-proxy-ext-2.2.0.jar" jar-entry=""/>
+         <Item path="../../../lib/beshara/csc/security/sec/utils/sec-utils-1.2.0.jar" jar-entry=""/>
+         <Item path="../../../lib/beshara/wfl-int/wfl-int-proxy-1.0.jar" jar-entry=""/>
+      </entries>
+   </classPath>
+   <docPath>
+      <entries class="[Ljava.net.URL;"/>
+   </docPath>
+   <locked>false</locked>
+   <name>Business-3.2.0</name>
+   <sourcePath>
+      <entries class="[Ljava.net.URL;"/>
+   </sourcePath>
+</JLibraryNode>

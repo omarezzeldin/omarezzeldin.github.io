@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<library name="DED-Presentation-4.0.4" id="oracle..ded-presentation-4-0-4" deployed="true" xmlns="http://xmlns.oracle.com/jdeveloper/1013/manifest-libraries">
+  <description/>
+  <classpath>../../../lib/other/spring/4.0.4/spring-instrument-4.0.4.RELEASE.jar</classpath>
+  <classpath>../../../lib/other/spring/4.0.4/spring-web-4.0.4.RELEASE.jar</classpath>
+</library>

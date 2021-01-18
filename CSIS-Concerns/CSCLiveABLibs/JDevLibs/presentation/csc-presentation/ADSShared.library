@@ -1,0 +1,26 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<JLibraryNode nselem="JLibraryNode" class="oracle.jdeveloper.library.JLibraryNode" deployedByDefault="true" xmlns="http://xmlns.oracle.com/jdeveloper/110000jlibrarynode">
+   <classPath>
+      <entries>
+         <Item path="../../../ADSLibs/Business/dom4j-1.6.1.jar" jar-entry=""/>
+         <Item path="../../../ADSLibs/Shared/commons/commons-codec-1.6.jar" jar-entry=""/>
+         <Item path="../../../ADSLibs/Shared/commons/commons-dbcp-1.4.jar" jar-entry=""/>
+         <Item path="../../../ADSLibs/Shared/commons/commons-lang-2.6.jar" jar-entry=""/>
+         <Item path="../../../ADSLibs/Shared/aopalliance-1.0.jar" jar-entry=""/>
+         <Item path="../../../ADSLibs/Shared/aspectjrt-1.6.11.RELEASE.jar" jar-entry=""/>
+         <Item path="../../../ADSLibs/Shared/aspectjweaver-1.6.11.RELEASE.jar" jar-entry=""/>
+         <Item path="../../../ADSLibs/Shared/antlr-2.7.7.jar" jar-entry=""/>
+         <Item path="../../../ADSLibs/Shared/ojdbc6.jar" jar-entry=""/>
+         <Item path="../../../ADSLibs/Shared/javassist-3.14.0-GA.jar" jar-entry=""/>
+         <Item path="../../../ADSLibs/Business/junit-4.8.2.jar" jar-entry=""/>
+      </entries>
+   </classPath>
+   <docPath>
+      <entries class="[Ljava.net.URL;"/>
+   </docPath>
+   <locked>false</locked>
+   <name>ADSShared</name>
+   <sourcePath>
+      <entries class="[Ljava.net.URL;"/>
+   </sourcePath>
+</JLibraryNode>

@@ -1,0 +1,102 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<JLibraryNode nselem="JLibraryNode" class="oracle.jdeveloper.library.JLibraryNode" deployedByDefault="true" xmlns="http://xmlns.oracle.com/jdeveloper/110000jlibrarynode">
+   <classPath>
+      <entries>
+        <Item path="../../../lib/other/birt/axis-ant.jar" jar-entry=""/>
+	<Item path="../../../lib/other/birt/axis.jar" jar-entry=""/>
+	<Item path="../../../lib/other/birt/com.ibm.icu_4.4.2.v20110208.jar" jar-entry=""/>
+	<Item path="../../../lib/other/birt/com.lowagie.text_2.1.7.v201004222200.jar" jar-entry=""/>
+	<Item path="../../../lib/other/birt/commons-cli-1.0.jar" jar-entry=""/>
+	<Item path="../../../lib/other/birt/commons-discovery-0.2.jar" jar-entry=""/>
+	<Item path="../../../lib/other/birt/derby.jar" jar-entry=""/>
+	<Item path="../../../lib/other/birt/flute.jar" jar-entry=""/>
+	<Item path="../../../lib/other/birt/javax.wsdl_1.5.1.v201012040544.jar" jar-entry=""/>
+	<Item path="../../../lib/other/birt/jaxrpc.jar" jar-entry=""/>
+	<Item path="../../../lib/other/birt/js.jar" jar-entry=""/>
+	<Item path="../../../lib/other/birt/org.apache.batik.bridge_1.6.0.v201011041432.jar" jar-entry=""/>
+	<Item path="../../../lib/other/birt/org.apache.batik.css_1.6.0.v201011041432.jar" jar-entry=""/>
+	<Item path="../../../lib/other/birt/org.apache.batik.dom.svg_1.6.0.v201011041432.jar" jar-entry=""/>
+	<Item path="../../../lib/other/birt/org.apache.batik.dom_1.6.0.v201011041432.jar" jar-entry=""/>
+	<Item path="../../../lib/other/birt/org.apache.batik.ext.awt_1.6.0.v201011041432.jar" jar-entry=""/>
+	<Item path="../../../lib/other/birt/org.apache.batik.parser_1.6.0.v201011041432.jar" jar-entry=""/>
+	<Item path="../../../lib/other/birt/org.apache.batik.pdf_1.6.0.v201105071520.jar" jar-entry=""/>
+	<Item path="../../../lib/other/birt/org.apache.batik.svggen_1.6.0.v201011041432.jar" jar-entry=""/>
+	<Item path="../../../lib/other/birt/org.apache.batik.transcoder_1.6.0.v201011041432.jar" jar-entry=""/>
+	<Item path="../../../lib/other/birt/org.apache.batik.util.gui_1.6.0.v201011041432.jar" jar-entry=""/>
+	<Item path="../../../lib/other/birt/org.apache.batik.util_1.6.0.v201011041432.jar" jar-entry=""/>
+	<Item path="../../../lib/other/birt/org.apache.batik.xml_1.6.0.v201011041432.jar" jar-entry=""/>
+	<Item path="../../../lib/other/birt/org.apache.commons.codec_1.3.0.v201101211617.jar" jar-entry=""/>
+	<Item path="../../../lib/other/birt/org.apache.xerces_2.9.0.v201101211617.jar" jar-entry=""/>
+	<Item path="../../../lib/other/birt/org.apache.xml.resolver_1.2.0.v201005080400.jar" jar-entry=""/>
+	<Item path="../../../lib/other/birt/org.apache.xml.serializer_2.7.1.v201005080400.jar" jar-entry=""/>
+	<Item path="../../../lib/other/birt/org.eclipse.birt.runtime_3.7.0.v20110615-1818.jar" jar-entry=""/>
+	<Item path="../../../lib/other/birt/org.eclipse.core.contenttype_3.4.100.v20110423-0524.jar" jar-entry=""/>
+	<Item path="../../../lib/other/birt/org.eclipse.core.expressions_3.4.300.v20110228.jar" jar-entry=""/>
+	<Item path="../../../lib/other/birt/org.eclipse.core.filesystem_1.3.100.v20110423-0524.jar" jar-entry=""/>
+	<Item path="../../../lib/other/birt/org.eclipse.core.jobs_3.5.100.v20110404.jar" jar-entry=""/>
+	<Item path="../../../lib/other/birt/org.eclipse.core.resources_3.7.100.v20110510-0712.jar" jar-entry=""/>
+	<Item path="../../../lib/other/birt/org.eclipse.core.runtime_3.7.0.v20110110.jar" jar-entry=""/>
+	<Item path="../../../lib/other/birt/org.eclipse.datatools.connectivity.apache.derby.dbdefinition_1.0.2.v200906161815.jar" jar-entry=""/>
+	<Item path="../../../lib/other/birt/org.eclipse.datatools.connectivity.apache.derby_1.0.101.v201104090305.jar" jar-entry=""/>
+	<Item path="../../../lib/other/birt/org.eclipse.datatools.connectivity.console.profile_1.0.0.v200906020553.jar" jar-entry=""/>
+	<Item path="../../../lib/other/birt/org.eclipse.datatools.connectivity.db.generic_1.0.1.v200908130547.jar" jar-entry=""/>
+	<Item path="../../../lib/other/birt/org.eclipse.datatools.connectivity.dbdefinition.genericJDBC_1.0.1.v200906161815.jar" jar-entry=""/>
+	<Item path="../../../lib/other/birt/org.eclipse.datatools.connectivity.oda.consumer_3.2.4.v201105200848.jar" jar-entry=""/>
+	<Item path="../../../lib/other/birt/org.eclipse.datatools.connectivity.oda.design_3.3.3.v201105191315.jar" jar-entry=""/>
+	<Item path="../../../lib/other/birt/org.eclipse.datatools.connectivity.oda.flatfile_3.1.1.v201104191557.jar" jar-entry=""/>
+	<Item path="../../../lib/other/birt/org.eclipse.datatools.connectivity.oda.profile_3.2.5.v201104090305.jar" jar-entry=""/>
+	<Item path="../../../lib/other/birt/org.eclipse.datatools.connectivity.oda_3.3.2.v201105200920.jar" jar-entry=""/>
+	<Item path="../../../lib/other/birt/org.eclipse.datatools.connectivity.sqm.core_1.2.2.v201104090305.jar" jar-entry=""/>
+	<Item path="../../../lib/other/birt/org.eclipse.datatools.connectivity_1.2.2.v201105270956.jar" jar-entry=""/>
+	<Item path="../../../lib/other/birt/org.eclipse.datatools.enablement.hsqldb.dbdefinition_1.0.0.v200906161800.jar" jar-entry=""/>
+	<Item path="../../../lib/other/birt/org.eclipse.datatools.enablement.hsqldb_1.0.0.v200906020900.jar" jar-entry=""/>
+	<Item path="../../../lib/other/birt/org.eclipse.datatools.enablement.ibm.db2.luw.dbdefinition_1.0.4.v201005211215.jar" jar-entry=""/>
+	<Item path="../../../lib/other/birt/org.eclipse.datatools.enablement.ibm.db2.luw_1.0.2.v201005211230.jar" jar-entry=""/>
+	<Item path="../../../lib/other/birt/org.eclipse.datatools.enablement.ibm.informix.dbdefinition_1.0.4.v201005211230.jar" jar-entry=""/>
+	<Item path="../../../lib/other/birt/org.eclipse.datatools.enablement.ibm.informix_1.0.1.v201005211230.jar" jar-entry=""/>
+	<Item path="../../../lib/other/birt/org.eclipse.datatools.enablement.msft.sqlserver.dbdefinition_1.0.0.v201004211630.jar" jar-entry=""/>
+	<Item path="../../../lib/other/birt/org.eclipse.datatools.enablement.msft.sqlserver_1.0.1.v201001180222.jar" jar-entry=""/>
+	<Item path="../../../lib/other/birt/org.eclipse.datatools.enablement.mysql.dbdefinition_1.0.4.v200906161800.jar" jar-entry=""/>
+	<Item path="../../../lib/other/birt/org.eclipse.datatools.enablement.mysql_1.0.2.v201002041100.jar" jar-entry=""/>
+	<Item path="../../../lib/other/birt/org.eclipse.datatools.enablement.oda.ws_1.2.2.v201011041216.jar" jar-entry=""/>
+	<Item path="../../../lib/other/birt/org.eclipse.datatools.enablement.oda.xml_1.2.1.v201104121500.jar" jar-entry=""/>
+	<Item path="../../../lib/other/birt/org.eclipse.datatools.enablement.oracle.dbdefinition_1.0.102.v201101120745.jar" jar-entry=""/>
+	<Item path="../../../lib/other/birt/org.eclipse.datatools.enablement.oracle_1.0.0.v200908130544.jar" jar-entry=""/>
+	<Item path="../../../lib/other/birt/org.eclipse.datatools.enablement.postgresql.dbdefinition_1.0.1.v200906161800.jar" jar-entry=""/>
+	<Item path="../../../lib/other/birt/org.eclipse.datatools.enablement.postgresql_1.0.1.v200906020900.jar" jar-entry=""/>
+	<Item path="../../../lib/other/birt/org.eclipse.datatools.modelbase.dbdefinition_1.0.2.v201002130228.jar" jar-entry=""/>
+	<Item path="../../../lib/other/birt/org.eclipse.datatools.modelbase.derby_1.0.0.v201002161452.jar" jar-entry=""/>
+	<Item path="../../../lib/other/birt/org.eclipse.datatools.modelbase.sql.query_1.1.1.v201008100700.jar" jar-entry=""/>
+	<Item path="../../../lib/other/birt/org.eclipse.datatools.modelbase.sql_1.0.4.v201002250945.jar" jar-entry=""/>
+	<Item path="../../../lib/other/birt/org.eclipse.emf.common_2.7.0.v20110527-1609.jar" jar-entry=""/>
+	<Item path="../../../lib/other/birt/org.eclipse.emf.ecore.change_2.7.0.v20110408-2116.jar" jar-entry=""/>
+	<Item path="../../../lib/other/birt/org.eclipse.emf.ecore.xmi_2.7.0.v20110520-1406.jar" jar-entry=""/>
+	<Item path="../../../lib/other/birt/org.eclipse.emf.ecore_2.7.0.v20110527-1609.jar" jar-entry=""/>
+	<Item path="../../../lib/other/birt/org.eclipse.emf_2.6.0.v20110530-1010.jar" jar-entry=""/>
+	<Item path="../../../lib/other/birt/org.eclipse.equinox.app_1.3.100.v20110321.jar" jar-entry=""/>
+	<Item path="../../../lib/other/birt/org.eclipse.equinox.common_3.6.0.v20110523.jar" jar-entry=""/>
+	<Item path="../../../lib/other/birt/org.eclipse.equinox.preferences_3.4.0.v20110502.jar" jar-entry=""/>
+	<Item path="../../../lib/other/birt/org.eclipse.equinox.registry_3.5.100.v20110502.jar" jar-entry=""/>
+	<Item path="../../../lib/other/birt/org.eclipse.osgi.services_3.3.0.v20110513.jar" jar-entry=""/>
+	<Item path="../../../lib/other/birt/org.eclipse.osgi_3.7.0.v20110613.jar" jar-entry=""/>
+	<Item path="../../../lib/other/birt/org.eclipse.update.configurator_3.3.100.v20100512.jar" jar-entry=""/>
+	<Item path="../../../lib/other/birt/org.w3c.css.sac_1.3.0.v200805290154.jar" jar-entry=""/>
+	<Item path="../../../lib/other/birt/org.w3c.dom.smil_1.0.0.v200806040011.jar" jar-entry=""/>
+	<Item path="../../../lib/other/birt/org.w3c.dom.svg_1.1.0.v201011041433.jar" jar-entry=""/>
+	<Item path="../../../lib/other/birt/saaj.jar" jar-entry=""/>
+	<Item path="../../../lib/other/birt/Tidy.jar" jar-entry=""/>
+	<Item path="../../../lib/other/birt/viewservlets.jar" jar-entry=""/>
+	<Item path="../../../lib/other/watermark/ireport-customization-jar.jar" jar-entry=""/>
+	<Item path="../../../lib/other/watermark/jasperreports-5.1.0.jar" jar-entry=""/>
+         
+      </entries>
+   </classPath>
+   <docPath>
+      <entries class="[Ljava.net.URL;"/>
+   </docPath>
+   <locked>false</locked>
+   <name>Birt-1.0.0</name>
+   <sourcePath>
+      <entries class="[Ljava.net.URL;"/>
+   </sourcePath>
+</JLibraryNode>

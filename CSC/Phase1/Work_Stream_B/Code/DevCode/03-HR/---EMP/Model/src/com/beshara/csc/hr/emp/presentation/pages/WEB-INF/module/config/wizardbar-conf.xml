@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<wizards>
+    <wizard configurationId="conditiontypeadd">
+        <step order="1" mapKey="conditiontypeadd" status="0" navigateStatus="1"
+              bundle="com.beshara.csc.nl.job.presentation.resources.wizardbar"
+              bundleKey="conditiontypeadd_addconditiontype" controlType="1" action="testwizard.test"/>
+        <step order="2" mapKey="conditionadd" status="0" navigateStatus="0"
+              bundle="com.beshara.csc.nl.job.presentation.resources.wizardbar" bundleKey="conditiontypeadd_addcondition"
+              controlType="1" action="testwizard.test"/>
+    </wizard>
+    <wizard configurationId="conditiontypeedit">
+        <step order="1" mapKey="conditiontypeedit" status="0" navigateStatus="1"
+              bundle="com.beshara.csc.nl.job.presentation.resources.wizardbar"
+              bundleKey="conditiontypeedit_editconditiontype" controlType="1" action="testwizard.test"/>
+        <step order="2" mapKey="conditionedit" status="0" navigateStatus="0"
+              bundle="com.beshara.csc.nl.job.presentation.resources.wizardbar"
+              bundleKey="conditiontypeedit_editcondition" controlType="1" action="testwizard.test"/>
+    </wizard>
+    <wizard configurationId="jobadd">
+        <step order="1" mapKey="jobadd" status="0" navigateStatus="1"
+              bundle="com.beshara.csc.nl.job.presentation.resources.wizardbar" bundleKey="jobadd_addjob" controlType="0"
+              action="jobAddBean.createJob"/>
+        <step order="2" mapKey="dutyadd" status="0" navigateStatus="0"
+              bundle="com.beshara.csc.nl.job.presentation.resources.wizardbar" bundleKey="jobadd_addduty"
+              controlType="0" action="testwizard.test"/>
+        <step order="3" mapKey="advantageadd" status="0" navigateStatus="0"
+              bundle="com.beshara.csc.nl.job.presentation.resources.wizardbar" bundleKey="jobadd_addadvantage"
+              controlType="0" action="testwizard.test"/>
+        <step order="3" mapKey="conditionadd" status="0" navigateStatus="0"
+              bundle="com.beshara.csc.nl.job.presentation.resources.wizardbar" bundleKey="jobadd_addcondition"
+              controlType="0" action="testwizard.test"/>
+        <step order="4" mapKey="experienceadd" status="0" navigateStatus="0"
+              bundle="com.beshara.csc.nl.job.presentation.resources.wizardbar" bundleKey="jobadd_addexperience"
+              controlType="0" action="testwizard.test"/>
+        <step order="5" mapKey="courseadd" status="0" navigateStatus="0"
+              bundle="com.beshara.csc.nl.job.presentation.resources.wizardbar" bundleKey="jobadd_addcourse"
+              controlType="0" action="testwizard.test"/>
+        <step order="6" mapKey="abilityadd" status="0" navigateStatus="0"
+              bundle="com.beshara.csc.nl.job.presentation.resources.wizardbar" bundleKey="jobadd_addability"
+              controlType="0" action="testwizard.test"/>
+    </wizard>
+    <wizard configurationId="jobedit">
+        <step order="1" mapKey="jobedit" status="0" navigateStatus="1"
+              bundle="com.beshara.csc.nl.job.presentation.resources.wizardbar" bundleKey="jobedit_editjob"
+              controlType="0" action="jobEditBean.displayJob"/>
+        <step order="2" mapKey="dutyedit" status="0" navigateStatus="0"
+              bundle="com.beshara.csc.nl.job.presentation.resources.wizardbar" bundleKey="jobedit_editduty"
+              controlType="0" action="testwizard.test"/>
+        <step order="3" mapKey="advantageedit" status="0" navigateStatus="0"
+              bundle="com.beshara.csc.nl.job.presentation.resources.wizardbar" bundleKey="jobedit_editadvantage"
+              controlType="0" action="testwizard.test"/>
+        <step order="3" mapKey="conditionedit" status="0" navigateStatus="0"
+              bundle="com.beshara.csc.nl.job.presentation.resources.wizardbar" bundleKey="jobedit_editcondition"
+              controlType="0" action="testwizard.test"/>
+        <step order="4" mapKey="experienceedit" status="0" navigateStatus="0"
+              bundle="com.beshara.csc.nl.job.presentation.resources.wizardbar" bundleKey="jobedit_editexperience"
+              controlType="0" action="testwizard.test"/>
+        <step order="5" mapKey="courseedit" status="0" navigateStatus="0"
+              bundle="com.beshara.csc.nl.job.presentation.resources.wizardbar" bundleKey="jobedit_editcourse"
+              controlType="0" action="testwizard.test"/>
+        <step order="6" mapKey="abilityedit" status="0" navigateStatus="0"
+              bundle="com.beshara.csc.nl.job.presentation.resources.wizardbar" bundleKey="jobedit_editability"
+              controlType="0" action="testwizard.test"/>
+    </wizard>
+    <wizard configurationId="hireTypesmaintain">
+        <step order="1" mapKey="hiretypesmaindata" status="0" navigateStatus="1"
+              bundle="com.beshara.csc.hr.emp.presentation.resources.wizardbar" bundleKey="maindata" controlType="0"
+              action="hireTypesMaintainBean.navigate" navigationCase="hiretypesmaindata"
+              stepBeanName="hireTypesMainData"/>
+        <step order="2" mapKey="documenttypemaintain" status="0" navigateStatus="1"
+              bundle="com.beshara.csc.hr.emp.presentation.resources.wizardbar" bundleKey="documenttype" controlType="0"
+              action="hireTypesMaintainBean.navigate" navigationCase="documenttypemaintain"
+              stepBeanName="documentTypeMaintain"/>
+        <step order="3" mapKey="proceduresmaintain" status="0" navigateStatus="1"
+              bundle="com.beshara.csc.hr.emp.presentation.resources.wizardbar" bundleKey="procedures" controlType="0"
+              action="hireTypesMaintainBean.navigate" navigationCase="proceduresmaintain"
+              stepBeanName="proceduresMaintain"/>
+    </wizard>
+    <wizard configurationId="empmaintain">
+        <step order="1" mapKey="maindata" status="0" navigateStatus="1" 
+              bundle="com.beshara.csc.hr.emp.presentation.resources.wizardbar" bundleKey="maindata" controlType="0"
+              action="empMaintainBean.navigate" navigationCase="empmaindata" stepBeanName="empMainDataBean"/>
+        <step order="2" mapKey="empQualificationsCandidateEdit" status="0" navigateStatus="1"
+              bundle="com.beshara.csc.hr.emp.presentation.resources.wizardbar" bundleKey="qualifications_Candidate"
+              controlType="0" action="empMaintainBean.navigate" navigationCase="empQualificationsCandidateEdit"
+              stepBeanName="qulListIntegrationBean" />
+        <step order="3" mapKey="documents" status="0" navigateStatus="1" 
+              bundle="com.beshara.csc.hr.emp.presentation.resources.wizardbar" bundleKey="emp_documents" controlType="0"
+              action="empMaintainBean.navigate" navigationCase="empdocuments" stepBeanName="empDocumentsBean"/>
+        <step order="4" mapKey="procedures" status="0" navigateStatus="1" 
+              bundle="com.beshara.csc.hr.emp.presentation.resources.wizardbar" bundleKey="emp_procedures"
+              controlType="0" action="empMaintainBean.navigate" navigationCase="empprocedures"
+              stepBeanName="empProceduresBean"/>
+        <step order="5" mapKey="empexperiencespage" status="0" navigateStatus="1"
+              bundle="com.beshara.csc.hr.emp.presentation.resources.wizardbar" bundleKey="Experiences_Candidate"
+              controlType="0" action="empMaintainBean.navigate" navigationCase="empexperiencespage"
+              stepBeanName="empExperiencesBean"/>
+    </wizard>
+    <wizard configurationId="empmaintainadd">
+        <step order="1" mapKey="maindata" status="0" navigateStatus="1"
+              bundle="com.beshara.csc.hr.emp.presentation.resources.wizardbar" bundleKey="maindata" controlType="0"
+              action="empMaintainBean.navigate" navigationCase="empmaindata" stepBeanName="empMainDataBean"/>
+    </wizard>
+    <wizard configurationId="conditionId">
+        <step order="1" mapKey="conditionmantian" status="0" navigateStatus="1"
+              bundle="com.beshara.csc.gn.grs.presentation.resources.wizardbar" bundleKey="conditionBaseName"
+              controlType="0" action="conditionsMaintainBean.navigate" navigationCase="condition_Main_Data"
+              stepBeanName="conditionsBaseLineBeanFirst" mandatory="true"/>
+        <step order="2" mapKey="conditionbaseLines" status="0" navigateStatus="1"
+              bundle="com.beshara.csc.gn.grs.presentation.resources.wizardbar" bundleKey="conditionBaseLine"
+              controlType="0" action="conditionsMaintainBean.navigate" navigationCase="conditionLine_Maintain_Details"
+              stepBeanName="conditionLineDetailBean"/>
+    </wizard>
+    <wizard configurationId="decisionadd">
+        <step order="1" mapKey="decisionadd" status="0" navigateStatus="1"
+              bundle="com.beshara.csc.nl.reg.integration.presentation.resources.wizardbar"
+              bundleKey="decisionadd_adddecision" controlType="0" action="decisionMaintainBean.navigate"
+              navigationCase="decisionmaindata" stepBeanName="hireDecisionMainData" mandatory="true"/>
+        <step order="2" mapKey="employeesadd" status="0" navigateStatus="0"
+              bundle="com.beshara.csc.nl.reg.integration.presentation.resources.wizardbar"
+              bundleKey="decisionadd_addemployee_person" controlType="0" action="decisionMaintainBean.navigate"
+              navigationCase="decisionemployeesmaintain" stepBeanName="decisionEmployeesMaintainBean" mandatory="true"/>
+        <!--step order="3" mapKey="referencesadd" status="0" navigateStatus="0"
+              bundle="com.beshara.csc.nl.reg.presentation.resources.wizardbar" bundleKey="decisionadd_addreference"
+              controlType="0" action="decisionMaintainBean.navigate" navigationCase="decisionreferencesmaintain"
+              stepBeanName="decisionReferencesMaintainBean" mandatory="true"/>
+        <step order="4" mapKey="decMaterialsKey" status="0" navigateStatus="0"
+              bundle="com.beshara.csc.nl.reg.presentation.resources.wizardbar" bundleKey="decisionadd_materials"
+              controlType="0" action="decisionMaintainBean.navigate" navigationCase="decMaterialsMaintain"
+              stepBeanName="decisionMaterialsMaintainBean"/-->
+    </wizard>
+    <wizard configurationId="addCandidate">
+        <step order="1" mapKey="mainDataPage" status="0" navigateStatus="1"
+              bundle="com.beshara.csc.hr.emp.presentation.resources.wizardbar" bundleKey="maindata" controlType="0"
+              action="addCandidateMaintainBean.navigate" navigationCase="mainDataPage"
+              stepBeanName="mainDataCandidateBean"/>
+        <step order="2" mapKey="qualificationsCandidatePage" status="0" navigateStatus="0"
+              bundle="com.beshara.csc.hr.emp.presentation.resources.wizardbar" bundleKey="qualifications_Candidate"
+              controlType="0" action="addCandidateMaintainBean.navigate" navigationCase="qualificationsCandidatePage"
+              stepBeanName="qulListIntegrationBean"/>
+        <step order="3" mapKey="documentscandidatePage" status="0" navigateStatus="0"
+              bundle="com.beshara.csc.hr.emp.presentation.resources.wizardbar" bundleKey="emp_documents" controlType="0"
+              action="addCandidateMaintainBean.navigate" navigationCase="documentscandidatePage"
+              stepBeanName="documentsCandidateBean"/>
+        <step order="4" mapKey="procedurescandidatePage" status="0" navigateStatus="0"
+              bundle="com.beshara.csc.hr.emp.presentation.resources.wizardbar" bundleKey="procedures" controlType="0"
+              action="addCandidateMaintainBean.navigate" navigationCase="procedurescandidatePage"
+              stepBeanName="proceduresCandidateBean"/>
+        <step order="5" mapKey="experiencecandidatePage" status="0" navigateStatus="0"
+              bundle="com.beshara.csc.hr.emp.presentation.resources.wizardbar" bundleKey="Experiences_Candidate"
+              controlType="0" action="addCandidateMaintainBean.navigate" navigationCase="experiencePage"
+              stepBeanName="experiencesCandidate"/>
+    </wizard>
+    <!--Illeagal Accomodations - Start-->
+    <wizard configurationId="addIlleagalAccomodation">
+        <step order="1" mapKey="illeagalAccomodationPersonalInfo" status="0" navigateStatus="1"
+              bundle="com.beshara.csc.hr.emp.presentation.resources.wizardbar"
+              bundleKey="illeagalAccomodationPersonalInfo" controlType="0"
+              action="illeagalAccomodationMaintainBean.navigate" navigationCase="illeagalAccomodationPersonalInfoCase"
+              stepBeanName="illeagalAccomodationPersonalInfo"/>
+        <step order="2" mapKey="illeagalAccomodationQualifications" status="0" navigateStatus="0"
+              bundle="com.beshara.csc.hr.emp.presentation.resources.wizardbar" bundleKey="illeagalAccomodationQual"
+              controlType="0" action="illeagalAccomodationMaintainBean.navigate"
+              navigationCase="illeagalAccomodationQualCase" stepBeanName="qulListIntegrationBean"/>
+    </wizard>
+    <!--Illeagal Accomodations - End-->
+</wizards>
