@@ -20,6 +20,10 @@ jobs:
       uses: actions/setup-java@v1
       with:
         java-version: 1.8
+    - name: dir files
+       - run: | 
+            cd CSIS-Concerns/CSCLiveABLibs/lib/beshara/csc/business
+            dir
     - name: install local lib
       run: mvn install:install-file "-Dfile=CSIS-Concerns/CSCLiveABLibs/lib/beshara/csc/business/base/base/base-3.8.6.jar" "-DgroupId=lib.beshara.csc.business.base" "-DartifactId=base" "-Dversion=3.8.6" "-Dpackaging=jar"
         
