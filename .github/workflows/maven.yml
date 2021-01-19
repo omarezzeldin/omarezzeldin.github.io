@@ -21,7 +21,7 @@ jobs:
       with:
         java-version: 1.8
     - name: install local lib
-      run: mvn install:install-file -Dfile="${{ github.workspace }}\CSIS-Concerns\CSCLiveABLibs\lib\beshara\csc\business\base\base-3.8.6.jar" -DgroupId=lib.beshara.csc.business.base -DartifactId=base -Dversion=3.8.6 -Dpackaging=jar
+      run: mvn install:install-file -Dfile=CSIS-Concerns/CSCLiveABLibs/lib/beshara/csc/business/base/base/base-3.8.6.jar -DgroupId=lib.beshara.csc.business.base -DartifactId=base -Dversion=3.8.6 -Dpackaging=jar
         
     - name: Build with Maven
       run: mvn -B package --file CSC/Phase1/Work_Stream_B/Code/DevCode/03-HR/EMP/Model/emp-jar_pom.xml
