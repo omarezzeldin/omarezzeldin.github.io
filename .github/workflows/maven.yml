@@ -20,10 +20,6 @@ jobs:
       uses: actions/setup-java@v1
       with:
         java-version: 1.8
-    - name: dir files
-      run: | 
-            cd CSIS-Concerns/CSCLiveABLibs/lib/beshara/csc/business/base/base/3.8.6
-            dir
     - name: install local lib
       run: |
         mvn install:install-file "-Dfile=CSIS-Concerns/CSCLiveABLibs/lib/beshara/csc/business/base/base/3.8.6/base-3.8.6.jar" "-DgroupId=lib.beshara.csc.business.base" "-DartifactId=base" "-Dversion=3.8.6" "-Dpackaging=jar"
@@ -78,5 +74,6 @@ jobs:
         mvn install:install-file "-Dfile=CSIS-Concerns/CSCLiveABLibs/lib/beshara/csc/presentation/integration/grs-intg-prs/1.0/grs-intg-prs-1.0.jar" "-DgroupId=lib.beshara.csc.presentation.integration" "-DartifactId=grs-intg-prs" "-Dversion=1.0" "-Dpackaging=jar"
 
         
-    - name: Build with Maven
+    - name: |
       run: mvn -B package --file CSC/Phase1/Work_Stream_B/Code/DevCode/03-HR/EMP/Model/emp-jar_pom.xml
+      run: mvn -B package --file CSC/Phase1/Work_Stream_B/Code/DevCode/03-HR/EMP/Model/emp-ear_pom.xml
