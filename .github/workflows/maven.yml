@@ -21,4 +21,4 @@ jobs:
       with:
         java-version: 1.8    
     - name: Build with Maven
-      run: mvn -B package --file pom.xml
+      run: mvn -B package --file CSC/Phase1/Work_Stream_B/Code/DevCode/03-HR/EMP/Model/emp-jar_pom.xml
