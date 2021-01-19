@@ -74,6 +74,7 @@ jobs:
         mvn install:install-file "-Dfile=CSIS-Concerns/CSCLiveABLibs/lib/beshara/csc/presentation/integration/grs-intg-prs/1.0/grs-intg-prs-1.0.jar" "-DgroupId=lib.beshara.csc.presentation.integration" "-DartifactId=grs-intg-prs" "-Dversion=1.0" "-Dpackaging=jar"
 
         
-    - name: |
-      run: mvn -B package --file CSC/Phase1/Work_Stream_B/Code/DevCode/03-HR/EMP/Model/emp-jar_pom.xml
-      run: mvn -B package --file CSC/Phase1/Work_Stream_B/Code/DevCode/03-HR/EMP/Model/emp-ear_pom.xml
+    - name: Build with Maven
+      run: |
+        mvn -B package --file CSC/Phase1/Work_Stream_B/Code/DevCode/03-HR/EMP/Model/emp-jar_pom.xml
+        mvn -B package --file CSC/Phase1/Work_Stream_B/Code/DevCode/03-HR/EMP/Model/emp-ear_pom.xml
