@@ -21,7 +21,7 @@ jobs:
       with:
         java-version: 1.8
     - name: dir files
-       - run: | 
+      run: | 
             cd CSIS-Concerns/CSCLiveABLibs/lib/beshara/csc/business
             dir
     - name: install local lib
