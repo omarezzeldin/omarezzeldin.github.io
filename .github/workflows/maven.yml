@@ -13,12 +13,12 @@ jobs:
     runs-on: windows-latest
 
     steps:
+    - name: allow long file names
+      run: git config --system core.longpaths true
     - uses: actions/checkout@v2
     - name: Set up JDK 1.8
       uses: actions/setup-java@v1
       with:
-        java-version: 1.8
-    - name: allow long file names
-      run: git config --system core.longpaths true
+        java-version: 1.8    
     - name: Build with Maven
       run: mvn -B package --file pom.xml
