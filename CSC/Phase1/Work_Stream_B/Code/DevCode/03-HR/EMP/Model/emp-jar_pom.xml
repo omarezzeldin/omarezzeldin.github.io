@@ -22,7 +22,7 @@
     </repositories>
     <dependencies>
         <dependency>
-            <groupId>lib.beshara.csc.business.base</groupId>
+            <groupId>lib.beshara.csc.business.base.base</groupId>
             <artifactId>base</artifactId>
             <version>3.8.6</version>
         </dependency>
