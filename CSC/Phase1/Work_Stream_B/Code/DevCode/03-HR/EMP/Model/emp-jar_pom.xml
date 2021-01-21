@@ -16,7 +16,7 @@
     <repositories>
         <repository>
             <id>my-internal-site</id>
-            <url>file:///Z:/</url>
+            <url>file:///Z://</url>
             <layout>default</layout>
         </repository>
     </repositories>
