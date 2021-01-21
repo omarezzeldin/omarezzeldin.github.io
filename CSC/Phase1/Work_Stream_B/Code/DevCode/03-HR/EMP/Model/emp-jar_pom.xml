@@ -16,7 +16,7 @@
     <repositories>
         <repository>
             <id>my-internal-site</id>
-            <url>file:///E:/__REPO__/Git/CSIS-Concerns/CSCLiveABLibs</url>
+            <url>file:///Z:/</url>
             <layout>default</layout>
         </repository>
     </repositories>
