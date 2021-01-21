@@ -22,7 +22,7 @@
     </repositories>
     <dependencies>
         <dependency>
-            <groupId>lib.beshara.csc.business.base.base</groupId>
+            <groupId>lib.beshara.csc.business.base</groupId>
             <artifactId>base</artifactId>
             <version>3.8.6</version>
         </dependency>
@@ -32,7 +32,7 @@
             <version>1.5.2</version>
         </dependency>
         <dependency>
-            <groupId>lib.beshara.csc.business.proxy.bsc.inf</groupId>
+            <groupId>lib.beshara.csc.business.proxy.bsc</groupId>
             <artifactId>inf-proxy</artifactId>
             <version>1.0</version>
         </dependency>

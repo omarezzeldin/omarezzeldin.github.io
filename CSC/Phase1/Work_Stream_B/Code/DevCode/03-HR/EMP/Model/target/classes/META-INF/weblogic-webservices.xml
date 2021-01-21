@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<web:weblogic-webservices xmlns:web="http://xmlns.oracle.com/weblogic/weblogic-webservices"><web:webservice-description>
-<web:webservice-description-name>EmployeeEServiceImplService</web:webservice-description-name><web:webservice-type>JAXWS</web:webservice-type><web:port-component>
-<web:port-component-name>EmployeeEServiceImplPort</web:port-component-name><web:service-endpoint-address><web:webservice-contextpath>emp</web:webservice-contextpath>
-<web:webservice-serviceuri>/EmployeeEServiceImplService</web:webservice-serviceuri></web:service-endpoint-address></web:port-component></web:webservice-description></web:weblogic-webservices>
