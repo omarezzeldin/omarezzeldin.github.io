@@ -16,7 +16,7 @@
     <repositories>
         <repository>
             <id>my-internal-site</id>
-            <url>file:///Z://</url>
+            <url>file:///E:/__REPO__/Git/omarezzeldin.github.io/CSIS-Concerns/CSCLiveABLibs/</url>
             <layout>default</layout>
         </repository>
     </repositories>
@@ -24,7 +24,7 @@
         <dependency>
             <groupId>lib.beshara.csc.business.base</groupId>
             <artifactId>base</artifactId>
-            <version>3.8.6</version>
+            <version>3.8.6</version>	
         </dependency>
         <dependency>
             <groupId>lib.beshara.commons.core</groupId>
