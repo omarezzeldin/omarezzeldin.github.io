@@ -23,9 +23,7 @@
     <dependencies>
         <dependency>
             <groupId>com.beshara</groupId>
-			<artifactId>EMP</artifactId>
-			<version>1.0</version>
-            <type>jar</type>
+			<artifactId>emp-app-jar</artifactId>			
         </dependency>
     </dependencies>
     <build>        
@@ -39,15 +37,43 @@
                         <addMavenDescriptor>false</addMavenDescriptor>
                     </archive>
                     <defaultLibBundleDir>lib/</defaultLibBundleDir>
-                    <modules>
+                    <!--modules>
                         <jarModule>
                             <groupId>com.beshara</groupId>
 							<artifactId>EMP</artifactId>							
                             <bundleFileName>/emp-app.jar</bundleFileName>
                             <bundleDir>/</bundleDir>							
                         </jarModule>
-                    </modules>
+                    </modules-->
                 </configuration>
+            </plugin>
+			<plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-dependency-plugin</artifactId>
+                <version>2.6</version>
+                <executions>
+                    <execution>
+                        <phase>validate</phase>
+                        <goals>
+                            <goal>copy</goal>
+                        </goals>
+                        <configuration>
+                            <outputDirectory>/</outputDirectory>
+                            <silent>true</silent>
+                            <artifactItems>
+                                <artifactItem>
+                                    <groupId>com.beshara</groupId>
+									<artifactId>emp-app-jar</artifactId>
+                                    <version>1.0</version>
+                                    <type>jar</type>
+									<overWrite>false</overWrite>
+									<outputDirectory>${project.build.directory}/alternateLocation</outputDirectory>
+									<destFileName>emp-app.jar</destFileName>
+                                </artifactItem>
+                            </artifactItems>
+                        </configuration>
+                    </execution>
+                </executions>
             </plugin>
         </plugins>
         <resources>
