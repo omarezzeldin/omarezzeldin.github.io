@@ -20,13 +20,13 @@
             <layout>default</layout>
         </repository>
     </repositories>
-    <dependencies>
+    <!--dependencies>
         <dependency>
             <groupId>com.beshara</groupId>
 			<artifactId>emp-app-jar</artifactId>
 			<version>1.0</version>
         </dependency>
-    </dependencies>
+    </dependencies-->
     <build>        
 		<plugins>
             <plugin>
@@ -38,7 +38,7 @@
                         <addMavenDescriptor>false</addMavenDescriptor>
                     </archive>
                     <defaultLibBundleDir>lib/</defaultLibBundleDir>
-                    <modules>
+                    <!--modules>
                         <jarModule>
                             <groupId>com.beshara</groupId>
 							<artifactId>emp-app-jar</artifactId>
@@ -46,7 +46,7 @@
                             <bundleFileName>/emp-app.jar</bundleFileName>
                             <bundleDir>/</bundleDir>							
                         </jarModule>
-                    </modules>
+                    </modules-->
                 </configuration>
             </plugin>
 			<plugin>
@@ -85,6 +85,13 @@
                     <include>**.xml</include>
                 </includes>
                 <targetPath>META-INF</targetPath>
+            </resource>
+			<resource>
+                <directory>${project.build.directory}/emp-jar/</directory>
+                <includes>
+                    <include>**.jar</include>
+                </includes>
+                <targetPath>/</targetPath>
             </resource>
         </resources>
         <finalName>emp-app</finalName>
