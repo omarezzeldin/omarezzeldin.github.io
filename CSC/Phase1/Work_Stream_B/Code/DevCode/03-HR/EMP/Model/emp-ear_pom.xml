@@ -28,7 +28,8 @@
     <dependencies>
         <dependency>
             <groupId>com.beshara</groupId>
-			<artifactId>emp-app-jar</artifactId>			
+			<artifactId>emp-app-jar</artifactId>
+			<version>1.0</version>
         </dependency>
     </dependencies>
     <build>        
