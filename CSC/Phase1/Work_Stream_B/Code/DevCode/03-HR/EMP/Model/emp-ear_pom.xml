@@ -69,7 +69,7 @@
                                     <version>1.0</version>
                                     <type>jar</type>
 									<overWrite>false</overWrite>
-									<outputDirectory>${project.build.directory}/emp-jar/</outputDirectory>
+									<outputDirectory>${project.build.directory}/</outputDirectory>
 									<destFileName>emp-app.jar</destFileName>
                                 </artifactItem>
                             </artifactItems>
@@ -86,13 +86,13 @@
                 </includes>
                 <targetPath>META-INF</targetPath>
             </resource>
-			<resource>
+			<!--resource>
                 <directory>${project.build.directory}/emp-jar/</directory>
                 <includes>
                     <include>**.jar</include>
                 </includes>
                 <targetPath>${basedir}/target/classes</targetPath>
-            </resource>
+            </resource-->
         </resources>
         <finalName>emp-app</finalName>
     </build>
