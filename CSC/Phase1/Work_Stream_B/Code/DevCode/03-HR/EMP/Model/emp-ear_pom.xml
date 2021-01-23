@@ -22,14 +22,14 @@
     </repositories>
     <dependencies>
         <dependency>
-            <groupId>Emp</groupId>
-            <artifactId>ModelJAR</artifactId>
-            <version>1.0</version>
+            <groupId>com.beshara</groupId>
+			<artifactId>EMP</artifactId>
+			<version>1.0</version>
             <type>jar</type>
         </dependency>
     </dependencies>
-    <build>
-        <plugins>
+    <build>        
+		<plugins>
             <plugin>
                 <artifactId>maven-ear-plugin</artifactId>
                 <version>3.2.0</version>
@@ -41,10 +41,10 @@
                     <defaultLibBundleDir>lib/</defaultLibBundleDir>
                     <modules>
                         <jarModule>
-                            <groupId>Emp</groupId>
-                            <artifactId>ModelJAR</artifactId>
+                            <groupId>com.beshara</groupId>
+							<artifactId>EMP</artifactId>							
                             <bundleFileName>/emp-app.jar</bundleFileName>
-                            <bundleDir>/</bundleDir>
+                            <bundleDir>/</bundleDir>							
                         </jarModule>
                     </modules>
                 </configuration>
