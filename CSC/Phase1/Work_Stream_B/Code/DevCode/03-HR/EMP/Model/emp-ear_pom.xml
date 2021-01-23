@@ -48,6 +48,7 @@
                             <groupId>com.beshara</groupId>
 							<artifactId>emp-app-jar</artifactId>
 							<bundleDir>/</bundleDir>
+							<bundleFileName>emp-app.jar</bundleFileName>
                         </jarModule>
                     </modules>
                 </configuration>
