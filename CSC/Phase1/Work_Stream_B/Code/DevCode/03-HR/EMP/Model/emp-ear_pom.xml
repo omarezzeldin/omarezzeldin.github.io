@@ -91,7 +91,7 @@
                 <includes>
                     <include>**.jar</include>
                 </includes>
-                <targetPath>/</targetPath>
+                <targetPath>${basedir}/target/classes</targetPath>
             </resource>
         </resources>
         <finalName>emp-app</finalName>
