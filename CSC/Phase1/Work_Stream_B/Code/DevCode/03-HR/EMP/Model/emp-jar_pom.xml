@@ -317,6 +317,7 @@
 					<excludes>
 						<exclude>**/presentation/**</exclude>
 					</excludes>
+					 <outputDirectory>../jars</outputDirectory>
 				</configuration>
 			</plugin>
 		</plugins>
