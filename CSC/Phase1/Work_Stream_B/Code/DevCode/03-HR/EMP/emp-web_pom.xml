@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com</groupId>
+	<artifactId>beshara</artifactId>
+	<version>1.0</version>
+	<description>emp web project</description>
+	<packaging>pom</packaging>
+	<name>emp</name>
+	<modules>
+		<module>ViewController/emp-war_pom.xml</module>
+		<module>ViewController/emp-ear_pom.xml</module>
+	</modules>
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>Emp</groupId>
+				<artifactId>ViewControllerWAR</artifactId>
+				<version>1.0</version>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+</project>

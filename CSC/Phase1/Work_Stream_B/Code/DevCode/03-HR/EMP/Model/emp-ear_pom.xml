@@ -4,7 +4,7 @@
 	<groupId>Emp</groupId>
 	<artifactId>ModelEAR</artifactId>
 	<version>1.0</version>
-	<description>emp ear project</description>
+	<description>emp app ear project</description>
 	<packaging>ear</packaging>
 	<name>emp</name>
 	<!--parent>
