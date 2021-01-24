@@ -22,6 +22,16 @@
 	</repositories>
 	<dependencies>
 		<dependency>
+			<groupId>org.simpleframework</groupId>
+			<artifactId>simple-xml</artifactId>
+			<version>2.7</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-lang3</artifactId>
+			<version>3.2.1</version>
+		</dependency>
+		<dependency>
 			<groupId>lib.beshara.csc.business.base</groupId>
 			<artifactId>base</artifactId>
 			<version>3.8.6</version>
@@ -316,7 +326,7 @@
 					</archive>
 					<excludes>
 						<exclude>**/presentation/**</exclude>
-					</excludes>					 
+					</excludes>
 				</configuration>
 			</plugin>
 		</plugins>
