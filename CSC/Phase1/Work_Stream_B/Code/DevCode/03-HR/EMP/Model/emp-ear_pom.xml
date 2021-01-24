@@ -1,94 +1,156 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0">
-    <modelVersion>4.0.0</modelVersion>
-    <groupId>Emp</groupId>
-    <artifactId>ModelEAR</artifactId>
-    <version>1.0</version>
-    <description>emp ear project</description>
-    <packaging>ear</packaging>
-    <name>emp</name>
-    <!--parent>
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>Emp</groupId>
+	<artifactId>ModelEAR</artifactId>
+	<version>1.0</version>
+	<description>emp ear project</description>
+	<packaging>ear</packaging>
+	<name>emp</name>
+	<!--parent>
      <groupId>com</groupId>
 	<artifactId>beshara</artifactId>
 	<version>1.0</version>
    </parent-->
 	<properties>
-        <argument1>emp</argument1>
-        <jdk.version>1.8</jdk.version>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <junit.version>3.8.1</junit.version>
-    </properties>
-    <repositories>
-        <repository>
-            <id>my-internal-site</id>
-            <url>file:///E:/__REPO__/Git/CSIS-Concerns/CSCLiveABLibs</url>
-            <layout>default</layout>
-        </repository>
-    </repositories>
-    <dependencies>
-        <dependency>
-            <groupId>com.beshara</groupId>
+		<argument1>emp</argument1>
+		<jdk.version>1.8</jdk.version>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<junit.version>3.8.1</junit.version>
+	</properties>
+	<repositories>
+		<repository>
+			<id>my-internal-site</id>
+			<url>file:///E:/__REPO__/Git/CSIS-Concerns/CSCLiveABLibs</url>
+			<layout>default</layout>
+		</repository>
+	</repositories>
+	<dependencies>
+		<dependency>
+			<groupId>com.beshara</groupId>
 			<artifactId>emp-app-jar</artifactId>
 			<version>1.0</version>
-        </dependency>
-    </dependencies>
-    <build>        
+		</dependency>
+	</dependencies>
+	<build>
 		<plugins>
-            <plugin>
-                <artifactId>maven-ear-plugin</artifactId>
-                <version>3.2.0</version>
-                <configuration>
-                    <encoding>UTF-8</encoding>
-                    <archive>
-                        <addMavenDescriptor>false</addMavenDescriptor>
-                    </archive>
-                    <defaultLibBundleDir>lib/</defaultLibBundleDir>
-                    <modules>
-                        <jarModule>
-                            <groupId>com.beshara</groupId>
+			<plugin>
+				<artifactId>maven-ear-plugin</artifactId>
+				<version>3.2.0</version>
+				<configuration>
+					<encoding>UTF-8</encoding>
+					<archive>
+						<addMavenDescriptor>false</addMavenDescriptor>
+					</archive>
+					<defaultLibBundleDir>lib/</defaultLibBundleDir>
+					<modules>
+						<jarModule>
+							<groupId>com.beshara</groupId>
 							<artifactId>emp-app-jar</artifactId>
 							<bundleDir>/</bundleDir>
 							<bundleFileName>emp-app.jar</bundleFileName>
-                        </jarModule>
-                    </modules>
-                </configuration>
-            </plugin>
+						</jarModule>
+					</modules>
+				</configuration>
+			</plugin>
 			<plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-dependency-plugin</artifactId>
-                <version>2.6</version>
-                <executions>
-                    <execution>
-                        <phase>validate</phase>
-                        <goals>
-                            <goal>copy</goal>
-                        </goals>
-                        <configuration>
-                            <outputDirectory>/</outputDirectory>
-                            <silent>true</silent>
-                            <artifactItems>
-                                <artifactItem>
-                                    <groupId>com.beshara</groupId>
-									<artifactId>emp-app-jar</artifactId>                                    
-                                    <type>jar</type>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-dependency-plugin</artifactId>
+				<version>2.6</version>
+				<executions>
+					<execution>
+						<phase>validate</phase>
+						<goals>
+							<goal>copy</goal>
+						</goals>
+						<configuration>
+							<outputDirectory>/</outputDirectory>
+							<silent>true</silent>
+							<artifactItems>
+								<artifactItem>
+									<groupId>com.beshara</groupId>
+									<artifactId>emp-app-jar</artifactId>
+									<type>jar</type>
 									<overWrite>false</overWrite>
 									<outputDirectory>${project.build.directory}/</outputDirectory>
 									<destFileName>emp-app.jar</destFileName>
-                                </artifactItem>
-                            </artifactItems>
-                        </configuration>
-                    </execution>
-                </executions>
-            </plugin>
-        </plugins>
-        <resources>
-            <resource>
-                <directory>src/META-INF</directory>
-                <includes>
-                    <include>**.xml</include>
-                </includes>
-                <targetPath>META-INF</targetPath>
-            </resource>
+								</artifactItem>
+							</artifactItems>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<!-- This is the configuration for the
+             weblogic-maven-plugin
+        -->
+				<groupId>com.oracle.weblogic</groupId>
+				<artifactId>weblogic-maven-plugin</artifactId>
+				<version>12.2.1-4-0</version>
+				<configuration>
+					<middlewareHome>E:/Oracle/Middleware</middlewareHome>
+				</configuration>
+				<executions>
+					<!-- Execute the appc goal during the package phase -->
+					<execution>
+						<id>wls-appc</id>
+						<phase>package</phase>
+						<goals>
+							<goal>appc</goal>
+						</goals>
+						<configuration>
+							<source>${project.build.directory}/${project.name}.${project.packaging}</source>
+						</configuration>
+					</execution>
+					<!-- Deploy the application to the WebLogic Server in the
+               pre-integration-test phase
+          -->
+					<execution>
+						<id>wls-deploy</id>
+						<phase>pre-integration-test</phase>
+						<goals>
+							<goal>deploy</goal>
+						</goals>
+						<configuration>
+							<!--The admin URL where the app is deployed. 
+Here use the plugin's default value t3://localhost:7001-->
+							<adminurl>t3://127.0.0.1:7101</adminurl>
+							<user>weblogic</user>
+							<password>weblogic1</password>
+							<!--The location of the file or directory to be deployed-->
+							<source>${project.build.directory}/${project.build.finalName}.${project.packaging}</source>
+							<!--The target servers where the application is deployed. 
+Here use the plugin's default value AdminServer-->
+							<targets>DefaultServer</targets>
+							<verbose>true</verbose>
+							<name>${project.build.finalName}</name>
+						</configuration>
+					</execution>
+					<!-- Stop the application in the pre-integration-test phase -->
+					<execution>
+						<id>wls-stop-app</id>
+						<phase>pre-integration-test</phase>
+						<goals>
+							<goal>stop-app</goal>
+						</goals>
+						<configuration>
+							<adminurl>t3://127.0.0.1:7101</adminurl>
+							<user>weblogic</user>
+							<password>weblogic1</password>
+							<name>${project.build.finalName}</name>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+		<resources>
+			<resource>
+				<directory>src/META-INF</directory>
+				<includes>
+					<include>**.xml</include>
+				</includes>
+				<targetPath>META-INF</targetPath>
+			</resource>
 			<!--resource>
                 <directory>${project.build.directory}/emp-jar/</directory>
                 <includes>
@@ -96,7 +158,7 @@
                 </includes>
                 <targetPath>${basedir}/target/classes</targetPath>
             </resource-->
-        </resources>
-        <finalName>emp-app</finalName>
-    </build>
+		</resources>
+		<finalName>emp-app</finalName>
+	</build>
 </project>
