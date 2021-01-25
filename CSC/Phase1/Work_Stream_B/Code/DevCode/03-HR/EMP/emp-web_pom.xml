@@ -11,7 +11,7 @@
 		<module>ViewController/emp-war_pom.xml</module>
 		<module>ViewController/emp-ear_pom.xml</module>
 	</modules>
-	<dependencyManagement>
+	<!--dependencyManagement>
 		<dependencies>
 			<dependency>
 				<groupId>Emp</groupId>
@@ -19,5 +19,5 @@
 				<version>1.0</version>
 			</dependency>
 		</dependencies>
-	</dependencyManagement>
+	</dependencyManagement-->
 </project>

@@ -87,6 +87,11 @@
 			<version>1.5.2</version>
 		</dependency>
 		<dependency>
+			<groupId>lib.beshara.commons.</groupId>
+			<artifactId>log4jutils</artifactId>
+			<version>1.1.0</version>
+		</dependency>
+		<dependency>
 			<groupId>lib.beshara.csc.business.proxy.bsc</groupId>
 			<artifactId>inf-proxy</artifactId>
 			<version>1.0</version>
@@ -300,7 +305,7 @@
 			<groupId>lib.beshara.csc.business.proxy.crs</groupId>
 			<artifactId>crs-proxy</artifactId>
 			<version>1.0</version>
-		</dependency>		
+		</dependency>
 		<dependency>
 			<groupId>lib.beshara.csc.business.integration</groupId>
 			<artifactId>reg-intg-bus</artifactId>
@@ -405,7 +410,7 @@
 						<addMavenDescriptor>false</addMavenDescriptor>
 					</archive>
 					<warSourceDirectory>${basedir}/../Model/src/com/beshara/csc/hr/emp/presentation/pages</warSourceDirectory>
-					<packagingExcludes>**/business/client/**,**/business/dao/**,**/business/deploy/**,**/business/dto/**,**/business/entity/**,**/business/facade/**,**/business/integration/**,**/business/shared/*.*</packagingExcludes>
+					<packagingExcludes>**/business/client/**,**/business/dao/**,**/business/deploy/**,**/business/dto/**,**/business/entity/**,**/business/facade/**,**/business/integration/**,**/business/shared/**</packagingExcludes>
 					<!--<warSourceExcludes>**/business/**</warSourceExcludes>-->
 					<webResources>
 						<resource>
@@ -413,9 +418,9 @@
 							<directory>${basedir}/../Model/src/com/beshara/csc/hr/emp/presentation</directory>
 							<targetPath>WEB-INF/classes/com/beshara/csc/hr/emp/presentation</targetPath>
 							<includes>
-								<include>pages/module/crs/media/**</include>
-								<include>pages/module/media/images/**</include>
-								<include>pages/security/images/**</include>
+								<include>pages/**/*.jpg</include>
+								<include>pages/**/*.png</include>
+								<include>pages/**/*.gif</include>
 								<include>pages/WEB-INF/app/config/**</include>
 								<include>pages/WEB-INF/module/**</include>
 								<include>pages/WEB-INF/*.xml</include>
@@ -434,6 +439,27 @@
 					</webResources>
 					<!--webXml>${project.build.directory}/web.xml</webXml-->
 				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-antrun-plugin</artifactId>
+				<version>3.0.0</version>
+				<executions>
+					<execution>
+						<id>copy-war-file</id>
+						<phase>package</phase>
+						<goals>
+							<goal>run</goal>
+						</goals>
+						<configuration>
+							<target name="copy war file to deploy folder">
+								<copy todir="deploy/">
+									<fileset dir="${project.build.directory}" includes="*.war"/>
+								</copy>
+							</target>
+						</configuration>
+					</execution>
+				</executions>
 			</plugin>
 		</plugins>
 		<finalName>emp-web</finalName>

@@ -2,7 +2,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0">
     <modelVersion>4.0.0</modelVersion>
     <groupId>Emp</groupId>
-    <artifactId>ViewControllerEAR</artifactId>
+    <artifactId>emp-web</artifactId>
     <version>1.0</version>
     <description>emp web ear project</description>
     <packaging>ear</packaging>
@@ -16,7 +16,7 @@
     <repositories>
         <repository>
             <id>my-internal-site</id>
-            <url>file:///E:/__REPO__/Git/CSIS-Concerns/CSCLiveABLibs</url>
+            <url>file:///E:/__REPO__/Git/omarezzeldin.github.io/CSIS-Concerns/CSCLiveABLibs/</url>
             <layout>default</layout>
         </repository>
     </repositories>
@@ -26,6 +26,7 @@
             <artifactId>ViewControllerWAR</artifactId>
             <version>1.0</version>
             <type>war</type>
+			<scope>runtime</scope>
         </dependency>
 		<dependency>
 			<groupId>com.oracle.weblogic</groupId>
@@ -39,7 +40,7 @@
         <plugins>
             <plugin>
                 <artifactId>maven-ear-plugin</artifactId>
-                <version>3.0.2</version>
+                <version>3.2.0</version>
                 <configuration>
                     <encoding>UTF-8</encoding>
                     <archive>
@@ -47,47 +48,39 @@
                     </archive>
                     <defaultLibBundleDir>lib/</defaultLibBundleDir>
                     <modules>
-                        <webModule>
+                        <webModule>                            
                             <groupId>Emp</groupId>
-                            <artifactId>ViewControllerWAR</artifactId>
-                            <bundleFileName>/emp-web.war</bundleFileName>
+							<artifactId>ViewControllerWAR</artifactId>							
+							<bundleFileName>/emp-web.war</bundleFileName>
                             <contextRoot>/emp</contextRoot>
                         </webModule>
                     </modules>
 					<generateApplicationXml>false</generateApplicationXml>
-                </configuration>
+					<!--outputDirectory>${project.build.directory}/</outputDirectory-->					
+                </configuration>				
             </plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-dependency-plugin</artifactId>
-				<version>2.6</version>
+				<artifactId>maven-antrun-plugin</artifactId>
+				<version>3.0.0</version>
 				<executions>
 					<execution>
+						<id>copy-war-file</id>
 						<phase>validate</phase>
 						<goals>
-							<goal>copy</goal>
+							<goal>run</goal>
 						</goals>
 						<configuration>
-							<outputDirectory>/</outputDirectory>
-							<silent>true</silent>
-							<artifactItems>
-								<artifactItem>
-									<groupId>Emp</groupId>
-									<artifactId>ViewControllerWAR</artifactId>
-									<type>war</type>
-									<overWrite>false</overWrite>
-									<outputDirectory>${project.build.directory}/</outputDirectory>
-									<destFileName>emp-web.war</destFileName>
-								</artifactItem>
-							</artifactItems>
+							<target name="copy war file to target folder">
+								<copy todir="${project.build.directory}/">
+									<fileset dir="deploy/" includes="*.war"/>									
+								</copy>								
+							</target>
 						</configuration>
 					</execution>
 				</executions>
 			</plugin>
-			<plugin>
-				<!-- This is the configuration for the
-             weblogic-maven-plugin
-        -->
+			<plugin>				
 				<groupId>com.oracle.weblogic</groupId>
 				<artifactId>weblogic-maven-plugin</artifactId>
 				<version>12.2.1-4-0</version>
@@ -96,11 +89,8 @@
 					<failOnError>true</failOnError>
 					<adminurl>t3://127.0.0.1:7101</adminurl>
 					<user>weblogic</user>
-					<password>weblogic1</password>
-					<!--The location of the file or directory to be deployed-->
-					<source>${project.build.directory}/${project.build.finalName}.${project.packaging}</source>
-					<!--The target servers where the application is deployed. 
-Here use the plugin's default value AdminServer-->
+					<password>weblogic1</password>					
+					<source>${project.build.directory}/${project.build.finalName}.${project.packaging}</source>					
 					<targets>DefaultServer</targets>
 					<verbose>true</verbose>
 					<name>${project.build.finalName}</name>
