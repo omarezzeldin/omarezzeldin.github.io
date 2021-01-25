@@ -1,0 +1,6 @@
+<project>
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>lib.beshara.security.sso.core</groupId>
+  <artifactId>sso-core</artifactId>
+  <version>1.5.6</version>
+</project>

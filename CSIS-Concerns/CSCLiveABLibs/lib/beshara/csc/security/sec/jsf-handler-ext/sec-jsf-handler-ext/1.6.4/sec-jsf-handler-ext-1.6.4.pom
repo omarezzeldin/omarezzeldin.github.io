@@ -1,0 +1,6 @@
+<project>
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>lib.beshara.csc.security.sec.jsf-handler-ext</groupId>
+  <artifactId>sec-jsf-handler-ext</artifactId>
+  <version>1.6.4</version>
+</project>

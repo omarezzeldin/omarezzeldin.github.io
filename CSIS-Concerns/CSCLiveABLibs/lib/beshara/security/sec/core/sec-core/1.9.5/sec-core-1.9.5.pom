@@ -1,0 +1,6 @@
+<project>
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>lib.beshara.security.sec.core</groupId>
+  <artifactId>sec-core</artifactId>
+  <version>1.9.5</version>
+</project>
