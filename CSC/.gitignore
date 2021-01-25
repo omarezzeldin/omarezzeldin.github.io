@@ -1,0 +1,8 @@
+*.class
+*.jar
+*.gif
+*.jpg
+*.png
+**/target/**
+**/classes/**
+**/.data/**
