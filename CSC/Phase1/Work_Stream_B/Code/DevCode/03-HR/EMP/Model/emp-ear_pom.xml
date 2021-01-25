@@ -90,7 +90,7 @@
 					<user>weblogic</user>
 					<password>weblogic1</password>
 					<source>${project.build.directory}/${project.build.finalName}.${project.packaging}</source>
-					<targets>AppServer03-R1,AppServer03-R2</targets>
+					<targets>AppCluster03</targets>
 					<verbose>true</verbose>
 					<name>${project.build.finalName}</name>
 				</configuration>
