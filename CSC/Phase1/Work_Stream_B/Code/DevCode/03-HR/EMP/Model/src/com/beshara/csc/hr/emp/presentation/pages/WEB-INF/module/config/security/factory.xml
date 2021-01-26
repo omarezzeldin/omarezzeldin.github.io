@@ -55,31 +55,31 @@
                   implementation="com.beshara.csc.sec.web.jsf.handler.JSFSecurityHandlerExt" loadOnStartup="true"
                   configFile="/WEB-INF/module/config/security/jsfSecurityHandler.xml"/>
         <!-- SecurityInfoHolder used in business & presentation -->
-        <!--instance interface="com.beshara.base.security.SecurityInfoHolder"
+        <instance interface="com.beshara.base.security.SecurityInfoHolder"
                   implementation="com.beshara.base.security.SecurityInfoHolderImpl"
                   loadOnStartup="true">
             <params>
                 <param name="stateHolder" value="WebContextSessionStateHolder"/>
                 <param name="key" value="com.beshara.security.info"/>
             </params>
-        </instance-->
+        </instance>
         <!-- SecurityInfoHandler that fills the security info into the SecurityInfoHolder -->
-        <!--instance name="SecurityInfoHandler"
+        <instance name="SecurityInfoHandler"
                   interface="com.beshara.sec.engine.SecurityHandler"
                   implementation="com.beshara.csc.sec.handler.CSCSecurityInfoHandler"
-                  loadOnStartup="true"/-->
-        <instance name="StaticStateHolder" interface="com.beshara.common.stateholder.StateHolder"
-                  implementation="com.beshara.common.stateholder.SimpleStateHolder" loadOnStartup="true"/>
+                  loadOnStartup="true"/>
+        <!--instance name="StaticStateHolder" interface="com.beshara.common.stateholder.StateHolder"
+                  implementation="com.beshara.common.stateholder.SimpleStateHolder" loadOnStartup="true"/-->
         <!-- SecurityInfoHolder used in business & presentation -->
-        <instance interface="com.beshara.base.security.SecurityInfoHolder"
+        <!--instance interface="com.beshara.base.security.SecurityInfoHolder"
                   implementation="com.beshara.base.security.SecurityInfoHolderImpl" loadOnStartup="true">
             <params>
                 <param name="stateHolder" value="StaticStateHolder"/>
                 <param name="key" value="com.beshara.security.info"/>
             </params>
-        </instance>
+        </instance-->
         <!-- SecurityInfoHandler that fills the security info into the SecurityInfoHolder -->
-        <instance name="SecurityInfoHandler" interface="com.beshara.sec.engine.SecurityHandler"
+        <!--instance name="SecurityInfoHandler" interface="com.beshara.sec.engine.SecurityHandler"
                   implementation="com.beshara.csc.sec.handler.CSCSecurityInfoHandler" loadOnStartup="true">
             <params>
                 <param name="usesDummyInfo" value="true"/>
@@ -92,7 +92,7 @@
                 <param name="ministryCode" value="13"/>
                 <param name="moduleCode" value="190"/>
             </params>
-        </instance>
+        </instance-->
         <instance interface="com.beshara.common.web.jsf.operationbar.OperationBarManager"
                   implementation="com.beshara.common.web.jsf.operationbar.OperationBarManagerImpl" loadOnStartup="true"
                   configFile="/WEB-INF/module/config/operationBar.xml"/>
@@ -134,7 +134,7 @@
             <params>
                 <param name="connection" value="deploy"/>
                 <!-- {TODO} comment the following parameters in the deployment on test server -->
-                <param name="lookupMode" value="local"/>
+                <!--param name="lookupMode" value="local"/-->
                 <param name="dataFiltration" value="true"/>
                 <!-- {TODO} set techLog to true in the deployment on test server -->
                 <param name="techLog" value="true"/>

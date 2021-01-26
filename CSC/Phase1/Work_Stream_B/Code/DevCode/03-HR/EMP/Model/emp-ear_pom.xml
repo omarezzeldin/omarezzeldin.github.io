@@ -39,10 +39,12 @@
 	<build>
 		<plugins>
 			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-ear-plugin</artifactId>
 				<version>3.2.0</version>
 				<configuration>
-					<encoding>UTF-8</encoding>
+					<earSourceDirectory>${basedir}/</earSourceDirectory>
+					<excludes>classes/**,deploy/**,src/**,target/**,*.xml,*.properties,*.jpr,META-INF/persistence.xml</excludes>
 					<archive>
 						<addMavenDescriptor>false</addMavenDescriptor>
 					</archive>
@@ -56,8 +58,9 @@
 						</jarModule>
 					</modules>
 					<generateApplicationXml>false</generateApplicationXml>
+					<applicationXml>${basedir}/META-INF/application.xml</applicationXml>
 				</configuration>
-			</plugin>
+			</plugin>			
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-antrun-plugin</artifactId>
@@ -93,6 +96,8 @@
 					<targets>AppCluster03</targets>
 					<verbose>true</verbose>
 					<name>${project.build.finalName}</name>
+					 <upload>true</upload>
+					 <!--remote>false</remote-->
 				</configuration>
 				<executions>
 					<execution>
@@ -138,15 +143,6 @@
 				</executions>
 			</plugin>
 		</plugins>
-		<resources>
-			<resource>
-				<directory>src/META-INF</directory>
-				<includes>
-					<include>**.xml</include>
-				</includes>
-				<targetPath>META-INF</targetPath>
-			</resource>
-		</resources>
 		<finalName>emp-app</finalName>
 	</build>
 </project>
