@@ -620,7 +620,7 @@
 						<phase>process-resources</phase>
 						
 						<configuration>
-							<dir>${maven.multiModuleProjectDirectory}/Model/src/com/beshara/csc/hr/emp/presentation/resources</dir>
+							<dir>../Model/src/com/beshara/csc/hr/emp/presentation/resources</dir>
 						
 							<encoding>${project.build.sourceEncoding}</encoding>
 						
