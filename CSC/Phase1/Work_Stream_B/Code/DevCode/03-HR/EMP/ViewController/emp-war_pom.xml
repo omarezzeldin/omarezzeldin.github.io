@@ -626,7 +626,7 @@
 							</target>
 						</configuration>
 					</execution>
-					<execution>
+					<!--execution>
 						<id>copy-properties-file-with-encoding</id>
 						<phase>compile</phase>
 						<goals>
@@ -640,7 +640,7 @@
 								</copy>
 							</target>
 						</configuration>
-					</execution>
+					</execution-->
 				</executions>
 			</plugin>
 		</plugins>
