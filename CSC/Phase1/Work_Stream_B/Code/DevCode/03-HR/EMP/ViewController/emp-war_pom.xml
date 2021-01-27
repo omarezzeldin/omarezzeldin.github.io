@@ -11,7 +11,7 @@
 		<argument1>emp</argument1>
 		<jdk.version>1.8</jdk.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>		
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<junit.version>3.8.1</junit.version>
 	</properties>
 	<repositories>
@@ -606,7 +606,36 @@
 					</webResources>
 					<!--webXml>${project.build.directory}/web.xml</webXml-->
 				</configuration>
-			</plugin>
+			</plugin>			
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>native2ascii-maven-plugin</artifactId>
+				<version>2.0.1</version>
+				<executions>
+					<execution>
+						<id>utf8</id>
+						<goals>
+							<goal>inplace</goal>
+						</goals>
+						<phase>process-resources</phase>
+						
+						<configuration>
+							<dir>${maven.multiModuleProjectDirectory}/Model/src/com/beshara/csc/hr/emp/presentation/resources</dir>
+						
+							<encoding>${project.build.sourceEncoding}</encoding>
+						
+							<includes>
+								<include>**/*.properties</include>
+						
+							</includes>
+							<excludes>
+								<exclude/>
+						
+							</excludes>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>			
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-antrun-plugin</artifactId>
@@ -626,21 +655,6 @@
 							</target>
 						</configuration>
 					</execution>
-					<!--execution>
-						<id>copy-properties-file-with-encoding</id>
-						<phase>compile</phase>
-						<goals>
-							<goal>run</goal>
-						</goals>
-						<configuration>
-							<encoding>${project.build.sourceEncoding}</encoding>
-							<target name="copy-properties-file-with-encoding">
-								<copy todir="${project.build.directory}/classes/com/beshara/csc/hr/emp/presentation/resources/" encoding="${project.build.sourceEncoding}" outputencoding="${project.build.sourceEncoding}">
-									<fileset dir="${maven.multiModuleProjectDirectory}/Model/src/com/beshara/csc/hr/emp/presentation/resources/" includes="*.properties"/>
-								</copy>
-							</target>
-						</configuration>
-					</execution-->
 				</executions>
 			</plugin>
 		</plugins>
