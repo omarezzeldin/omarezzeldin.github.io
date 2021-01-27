@@ -1,0 +1,6 @@
+<project>
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>lib.beshara.csc.security.sec.info-handler</groupId>
+  <artifactId>sec-info-handler</artifactId>
+  <version>1.6.7</version>
+</project>

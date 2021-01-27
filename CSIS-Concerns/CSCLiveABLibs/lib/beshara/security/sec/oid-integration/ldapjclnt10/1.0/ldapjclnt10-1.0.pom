@@ -1,0 +1,6 @@
+<project>
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>lib.beshara.security.sec.oid-integration</groupId>
+  <artifactId>ldapjclnt10</artifactId>
+  <version>1.0</version>
+</project>

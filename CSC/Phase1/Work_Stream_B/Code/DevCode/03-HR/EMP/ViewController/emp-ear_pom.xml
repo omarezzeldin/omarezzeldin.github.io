@@ -1,33 +1,33 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0">
-    <modelVersion>4.0.0</modelVersion>
-    <groupId>Emp</groupId>
-    <artifactId>emp-web</artifactId>
-    <version>1.0</version>
-    <description>emp web ear project</description>
-    <packaging>ear</packaging>
-    <name>emp</name>
-    <properties>
-        <argument1>emp</argument1>
-        <jdk.version>1.8</jdk.version>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <junit.version>3.8.1</junit.version>
-    </properties>
-    <repositories>
-        <repository>
-            <id>my-internal-site</id>
-            <url>file:///E:/__REPO__/Git/omarezzeldin.github.io/CSIS-Concerns/CSCLiveABLibs/</url>
-            <layout>default</layout>
-        </repository>
-    </repositories>
-    <dependencies>
-        <dependency>
-            <groupId>Emp</groupId>
-            <artifactId>ViewControllerWAR</artifactId>
-            <version>1.0</version>
-            <type>war</type>
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>Emp</groupId>
+	<artifactId>emp-web</artifactId>
+	<version>1.0</version>
+	<description>emp web ear project</description>
+	<packaging>ear</packaging>
+	<name>emp</name>
+	<properties>
+		<argument1>emp</argument1>
+		<jdk.version>1.8</jdk.version>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<junit.version>3.8.1</junit.version>
+	</properties>
+	<repositories>
+		<repository>
+			<id>my-internal-site</id>
+			<url>file:///E:/__REPO__/Git/omarezzeldin.github.io/CSIS-Concerns/CSCLiveABLibs/</url>
+			<layout>default</layout>
+		</repository>
+	</repositories>
+	<dependencies>
+		<dependency>
+			<groupId>Emp</groupId>
+			<artifactId>ViewControllerWAR</artifactId>
+			<version>1.0</version>
+			<type>war</type>
 			<scope>runtime</scope>
-        </dependency>
+		</dependency>
 		<dependency>
 			<groupId>com.oracle.weblogic</groupId>
 			<artifactId>weblogic-maven-plugin</artifactId>
@@ -35,30 +35,32 @@
 			<type>pom</type>
 			<scope>provided</scope>
 		</dependency>
-    </dependencies>
-    <build>
-        <plugins>
-            <plugin>
-                <artifactId>maven-ear-plugin</artifactId>
-                <version>3.2.0</version>
-                <configuration>
-                    <encoding>UTF-8</encoding>
-                    <archive>
-                        <addMavenDescriptor>false</addMavenDescriptor>
-                    </archive>
-                    <defaultLibBundleDir>lib/</defaultLibBundleDir>
-                    <modules>
-                        <webModule>                            
-                            <groupId>Emp</groupId>
-							<artifactId>ViewControllerWAR</artifactId>							
+	</dependencies>
+	<build>
+		<plugins>
+			<plugin>
+				<artifactId>maven-ear-plugin</artifactId>
+				<version>3.2.0</version>
+				<configuration>
+					<earSourceDirectory>${basedir}/</earSourceDirectory>
+					<excludes>classes/**,deploy/**,src/**,target/**,*.xml,*.properties,*.jpr,public_html/**</excludes>
+					<archive>
+						<addMavenDescriptor>false</addMavenDescriptor>
+					</archive>
+					<defaultLibBundleDir>lib/</defaultLibBundleDir>
+					<modules>
+						<webModule>
+							<groupId>Emp</groupId>
+							<artifactId>ViewControllerWAR</artifactId>
 							<bundleFileName>/emp-web.war</bundleFileName>
-                            <contextRoot>/emp</contextRoot>
-                        </webModule>
-                    </modules>
+							<contextRoot>/emp</contextRoot>
+						</webModule>
+					</modules>
 					<generateApplicationXml>false</generateApplicationXml>
-					<!--outputDirectory>${project.build.directory}/</outputDirectory-->					
-                </configuration>				
-            </plugin>
+					<applicationXml>${basedir}/META-INF/application.xml</applicationXml>
+					<!--outputDirectory>${project.build.directory}/</outputDirectory-->
+				</configuration>
+			</plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-antrun-plugin</artifactId>
@@ -73,27 +75,29 @@
 						<configuration>
 							<target name="copy war file to target folder">
 								<copy todir="${project.build.directory}/">
-									<fileset dir="deploy/" includes="*.war"/>									
-								</copy>								
+									<fileset dir="deploy/" includes="*.war"/>
+								</copy>
 							</target>
 						</configuration>
 					</execution>
 				</executions>
 			</plugin>
-			<plugin>				
+			<plugin>
 				<groupId>com.oracle.weblogic</groupId>
 				<artifactId>weblogic-maven-plugin</artifactId>
 				<version>12.2.1-4-0</version>
 				<configuration>
 					<middlewareHome>E:/Oracle/Middleware</middlewareHome>
 					<failOnError>true</failOnError>
-					<adminurl>t3://127.0.0.1:7101</adminurl>
+					<adminurl>t3://csc-cts-web-n01-lnx.beshara.com:7001</adminurl>
 					<user>weblogic</user>
-					<password>weblogic1</password>					
-					<source>${project.build.directory}/${project.build.finalName}.${project.packaging}</source>					
-					<targets>DefaultServer</targets>
+					<password>weblogic1</password>
+					<source>${project.build.directory}/${project.build.finalName}.${project.packaging}</source>
+					<targets>WebCluster03</targets>
 					<verbose>true</verbose>
 					<name>${project.build.finalName}</name>
+					<upload>true</upload>
+					<!--remote>false</remote-->
 				</configuration>
 				<executions>
 					<execution>
@@ -138,7 +142,7 @@
 					</execution>
 				</executions>
 			</plugin>
-        </plugins>
-        <finalName>emp-web</finalName>
-    </build>
+		</plugins>
+		<finalName>emp-web</finalName>
+	</build>
 </project>

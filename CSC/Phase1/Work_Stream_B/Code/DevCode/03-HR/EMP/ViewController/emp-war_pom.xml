@@ -11,6 +11,7 @@
 		<argument1>emp</argument1>
 		<jdk.version>1.8</jdk.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>		
 		<junit.version>3.8.1</junit.version>
 	</properties>
 	<repositories>
@@ -22,6 +23,81 @@
 	</repositories>
 	<dependencies>
 		<dependency>
+			<groupId>lib.beshara.notification</groupId>
+			<artifactId>notification</artifactId>
+			<version>1.1</version>
+		</dependency>
+		<dependency>
+			<groupId>lib.beshara.security.sec.oid-integration</groupId>
+			<artifactId>ldapjclnt10</artifactId>
+			<version>1.0</version>
+		</dependency>
+		<dependency>
+			<groupId>lib.beshara.locking.base</groupId>
+			<artifactId>locking-base</artifactId>
+			<version>2.2.0</version>
+		</dependency>
+		<dependency>
+			<groupId>lib.other.scanner</groupId>
+			<artifactId>JTwain</artifactId>
+			<version>1.0</version>
+		</dependency>
+		<dependency>
+			<groupId>lib.other.scanner</groupId>
+			<artifactId>JTwainLicense</artifactId>
+			<version>1.0</version>
+		</dependency>
+		<dependency>
+			<groupId>lib.beshara.csc.business.proxy.hrm</groupId>
+			<artifactId>inv-proxy</artifactId>
+			<version>1.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.danilopianini</groupId>
+			<artifactId>gson-extras</artifactId>
+			<version>0.2.1</version>
+		</dependency>
+		<dependency>
+			<groupId>lib.beshara.csc.business.proxy.fut</groupId>
+			<artifactId>fut-proxy</artifactId>
+			<version>1.0</version>
+		</dependency>
+		<dependency>
+			<groupId>lib.beshara.csc.business.proxy.flm</groupId>
+			<artifactId>FileNetIntegration</artifactId>
+			<version>1.0</version>
+		</dependency>
+		<!--dependency>
+		<groupId>lib.other.presenation</groupId>
+		<artifactId>eclientValidators</artifactId>
+		<version>1.0</version>
+	</dependency-->
+		<dependency>
+			<groupId>lib.beshara.csc.business.proxy.hrm</groupId>
+			<artifactId>eos-proxy</artifactId>
+			<version>1.0</version>
+		</dependency>
+		<dependency>
+			<groupId>lib.beshara.csc.business.proxy.fil</groupId>
+			<artifactId>fil-proxy</artifactId>
+			<version>1.0</version>
+		</dependency>
+		<dependency>
+			<groupId>lib.beshara.csc.business.proxy.ded</groupId>
+			<artifactId>ded-intg-proxy</artifactId>
+			<version>1.0</version>
+		</dependency>
+		<dependency>
+			<groupId>commons-io</groupId>
+			<artifactId>commons-io</artifactId>
+			<version>2.4</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-lang3</artifactId>
+			<version>3.1</version>
+		</dependency>
+		<dependency>
 			<groupId>com.googlecode.json-simple</groupId>
 			<artifactId>json-simple</artifactId>
 			<version>1.1.1</version>
@@ -32,9 +108,24 @@
 			<version>1.1.3</version>
 		</dependency>
 		<dependency>
+			<groupId>lib.beshara.commons.base64utils</groupId>
+			<artifactId>base64utils</artifactId>
+			<version>1.1.0</version>
+		</dependency>
+		<dependency>
 			<groupId>lib.beshara.csc.business.base</groupId>
 			<artifactId>base</artifactId>
 			<version>3.8.6</version>
+		</dependency>
+		<dependency>
+			<groupId>org.simpleframework</groupId>
+			<artifactId>simple-xml</artifactId>
+			<version>2.7.1</version>
+		</dependency>
+		<dependency>
+			<groupId>lib.other.scanner</groupId>
+			<artifactId>base64-utils</artifactId>
+			<version>1.0</version>
 		</dependency>
 		<dependency>
 			<groupId>lib.beshara.csc.presentation.report</groupId>
@@ -67,6 +158,11 @@
 			<version>1.6.6</version>
 		</dependency>
 		<dependency>
+			<groupId>lib.beshara.csc.security.sec.info-handler</groupId>
+			<artifactId>sec-info-handler</artifactId>
+			<version>1.6.7</version>
+		</dependency>
+		<dependency>
 			<groupId>lib.beshara.csc.security.sec.engine-ext</groupId>
 			<artifactId>sec-engine-ext</artifactId>
 			<version>1.6.7</version>
@@ -85,6 +181,11 @@
 			<groupId>lib.beshara.commons.core</groupId>
 			<artifactId>bg-commons-core</artifactId>
 			<version>1.5.2</version>
+		</dependency>
+		<dependency>
+			<groupId>commons-validator</groupId>
+			<artifactId>commons-validator</artifactId>
+			<version>1.4.0</version>
 		</dependency>
 		<dependency>
 			<groupId>lib.beshara.commons.</groupId>
@@ -132,6 +233,17 @@
 			<version>1.0</version>
 		</dependency>
 		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+			<version>1.7.5</version>
+		</dependency>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-log4j12</artifactId>
+			<version>1.7.5</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
 			<groupId>lib.other.presenation</groupId>
 			<artifactId>myfaces-impl</artifactId>
 			<version>1.1.5.xx</version>
@@ -167,6 +279,16 @@
 			<version>1.6.1</version>
 		</dependency>
 		<dependency>
+			<groupId>commons-beanutils</groupId>
+			<artifactId>commons-beanutils</artifactId>
+			<version>1.9.1</version>
+		</dependency>
+		<dependency>
+			<groupId>commons-lang</groupId>
+			<artifactId>commons-lang</artifactId>
+			<version>2.6</version>
+		</dependency>
+		<dependency>
 			<groupId>lib.beshara.csc.business.proxy.prl</groupId>
 			<artifactId>sal2-proxy</artifactId>
 			<version>1.0</version>
@@ -182,8 +304,23 @@
 			<version>1.0</version>
 		</dependency>
 		<dependency>
+			<groupId>lib.beshara.csc.business.proxy.hrm</groupId>
+			<artifactId>adc-proxy</artifactId>
+			<version>1.0</version>
+		</dependency>
+		<dependency>
 			<groupId>lib.beshara.csc.business.proxy.ntl</groupId>
 			<artifactId>job-proxy</artifactId>
+			<version>1.0</version>
+		</dependency>
+		<dependency>
+			<groupId>lib.beshara.csc.business.proxy.hrm</groupId>
+			<artifactId>apr-proxy</artifactId>
+			<version>1.0</version>
+		</dependency>
+		<dependency>
+			<groupId>lib.beshara.csc.business.proxy.aud</groupId>
+			<artifactId>aud-proxy</artifactId>
 			<version>1.0</version>
 		</dependency>
 		<dependency>
@@ -207,6 +344,11 @@
 			<version>3.0</version>
 		</dependency>
 		<dependency>
+			<groupId>com.lmax</groupId>
+			<artifactId>disruptor</artifactId>
+			<version>3.3.0</version>
+		</dependency>
+		<dependency>
 			<groupId>com.google.code.gson</groupId>
 			<artifactId>gson</artifactId>
 			<version>2.8.5</version>
@@ -215,6 +357,26 @@
 			<groupId>commons-codec</groupId>
 			<artifactId>commons-codec</artifactId>
 			<version>1.9</version>
+		</dependency>
+		<dependency>
+			<groupId>commons-collections</groupId>
+			<artifactId>commons-collections</artifactId>
+			<version>3.2.1</version>
+		</dependency>
+		<dependency>
+			<groupId>commons-fileupload</groupId>
+			<artifactId>commons-fileupload</artifactId>
+			<version>1.3.1</version>
+		</dependency>
+		<dependency>
+			<groupId>commons-digester</groupId>
+			<artifactId>commons-digester</artifactId>
+			<version>1.8.1</version>
+		</dependency>
+		<dependency>
+			<groupId>commons-el</groupId>
+			<artifactId>commons-el</artifactId>
+			<version>1.0</version>
 		</dependency>
 		<dependency>
 			<groupId>org.apache.httpcomponents</groupId>
@@ -234,6 +396,11 @@
 		<dependency>
 			<groupId>lib.other</groupId>
 			<artifactId>javax.servlet.javax.servlet-api</artifactId>
+			<version>1.0</version>
+		</dependency>
+		<dependency>
+			<groupId>lib.other.presenation</groupId>
+			<artifactId>jgraphx</artifactId>
 			<version>1.0</version>
 		</dependency>
 		<dependency>
@@ -455,6 +622,21 @@
 							<target name="copy war file to deploy folder">
 								<copy todir="deploy/">
 									<fileset dir="${project.build.directory}" includes="*.war"/>
+								</copy>
+							</target>
+						</configuration>
+					</execution>
+					<execution>
+						<id>copy-properties-file-with-encoding</id>
+						<phase>compile</phase>
+						<goals>
+							<goal>run</goal>
+						</goals>
+						<configuration>
+							<encoding>${project.build.sourceEncoding}</encoding>
+							<target name="copy-properties-file-with-encoding">
+								<copy todir="${project.build.directory}/classes/com/beshara/csc/hr/emp/presentation/resources/" encoding="${project.build.sourceEncoding}" outputencoding="${project.build.sourceEncoding}">
+									<fileset dir="${maven.multiModuleProjectDirectory}/Model/src/com/beshara/csc/hr/emp/presentation/resources/" includes="*.properties"/>
 								</copy>
 							</target>
 						</configuration>
